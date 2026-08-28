@@ -1,0 +1,23 @@
+import type { LinkItem } from "../../types";
+
+interface NavLinksProps {
+  links: LinkItem[];
+}
+
+function NavLinks({ links }: NavLinksProps) {
+  return (
+    <div className="hidden lg:flex items-center space-x-6 xl:space-x-8 bg-white px-6 xl:px-6 py-2 rounded-xl shadow-md">
+      {links.map((link) => (
+        <a
+          key={link.label}
+          href={link.href}
+          className="text-gray-700 hover:text-secondary text-md font-medium transition-colors duration-200 pb-1 whitespace-nowrap"
+        >
+          {link.label}
+        </a>
+      ))}
+    </div>
+  );
+}
+
+export default NavLinks;
