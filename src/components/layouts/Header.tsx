@@ -4,11 +4,9 @@ import NavLinks from "./NavLinks";
 import LanguageDropdown from "./LanguageDropdown";
 import MobileMenu from "./MobileMenu";
 import { LANGUAGES, Logo, NAV_LINKS, ROUTES } from "../../config/site";
-import { useNavigate } from "react-router-dom";
 import Button from "../ui/Button";
 
 function Header() {
-  const navigate = useNavigate();
   const [isMobileOpen, setIsMobileOpen] = useState<boolean>(false);
   const [currentLang, setCurrentLang] = useState<Language>(LANGUAGES[0]);
 

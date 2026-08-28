@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
-import type { NavLinkItem } from "../../types";
+import { useEffect } from "react";
+import type { LinkItem } from "../../types";
 import Button from "../ui/Button";
 import { ROUTES } from "../../config/site";
 
 interface MobileMenuProps {
   isOpen: boolean;
-  links: NavLinkItem[];
+  links: LinkItem[];
   onClose: () => void;
 }
 
