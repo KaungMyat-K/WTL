@@ -12,9 +12,9 @@ export const ROUTES = {
   JOBS: "/jobs",
   BLOGS: "/blogs",
   CONTACT: "/contact",
-  CUSTOMER_PORTAL: "https://www.facebook.com",
-  NEW_CUSTOMER_QUOTE: "/quote/new",
-  EXISTING_CUSTOMER_QUOTE: "https://portal.yourdomain.com/quote",
+  CUSTOMER_PORTAL: "",
+  NEW_CUSTOMER_QUOTE: "",
+  EXISTING_CUSTOMER_QUOTE: "",
 } as const;
 
 export const NAV_LINKS: LinkItem[] = [
@@ -30,7 +30,6 @@ export const LANGUAGES: Language[] = [
   { code: "th", name: "Thai", flag: thFlagImg },
 ];
 
-// Fixed duplicate hrefs to map to correct endpoints
 export const SERVICE_LINKS: LinkItem[] = [
   { label: "Sea Freight", href: ROUTES.SERVICE_DETAIL("sea-freight") },
   { label: "Road Freight", href: ROUTES.SERVICE_DETAIL("road-freight") },

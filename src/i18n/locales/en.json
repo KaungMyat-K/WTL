@@ -1,0 +1,105 @@
+{
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "jobs": "Jobs",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "items": [
+        {
+          "id": 1,
+          "primaryTitle": "RELIABLE SEA FREIGHT",
+          "secondaryTitle": "SOLUTIONS",
+          "description": "Connecting businesses worldwide with efficient and cost-effective shipping solutions."
+        },
+        {
+          "id": 2,
+          "primaryTitle": "",
+          "secondaryTitle": "",
+          "description": ""
+        },
+        {
+          "id": 3,
+          "primaryTitle": "",
+          "secondaryTitle": "",
+          "description": ""
+        }
+      ],
+      "button": "Get a Quote"
+    },
+    "clients": {
+      "title": "Trusted by"
+    },
+    "services": {
+      "primaryTitle": "",
+      "secondaryTitle": "",
+      "description": "",
+      "button": "Explore Our Services"
+    },
+    "getAQuote": {
+      "title": "",
+      "description": "",
+      "newCustomerButton": "",
+      "existingCustomerButton": ""
+    },
+    "blogs": {
+      "primaryTitle": "",
+      "secondaryTitle": "",
+      "button": ""
+    }
+  },
+  "serivces": {
+    "hero": {
+      "primaryTitle": "RELIABLE SEA FREIGHT",
+      "secondaryTitle": "SOLUTIONS",
+      "description": "Connecting businesses worldwide with efficient and cost-effective shipping solutions.",
+      "stats": [
+        {
+          "id": 1,
+          "title": "Shipments Delivered",
+          "value": "10K+"
+        },
+        {
+          "id": 2,
+          "title": "Countries Served",
+          "value": "50+"
+        },
+        {
+          "id": 3,
+          "title": "Satisfaction Rate",
+          "value": "100%"
+        }
+      ]
+    },
+    "servicesList": {
+      "primaryTitle": "",
+      "secondaryTitle": "",
+      "description": "",
+      "button": "",
+      "items": [
+        {
+          "id": 1,
+          "title": "",
+          "description": "",
+          "shortDescription": "",
+          "details": {}
+        },
+        {
+          "id": 2,
+          "title": "",
+          "description": "",
+          "shortDescription": ""
+        },
+        {
+          "id": 3,
+          "title": "",
+          "description": "",
+          "shortDescription": ""
+        }
+      ]
+    }
+  }
+}

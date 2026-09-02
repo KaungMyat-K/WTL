@@ -8,9 +8,7 @@ function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-8">
-        {/* Footer Columns */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12">
-          {/* Column 1: Brand */}
           <div className="flex flex-row items-center gap-4 lg:block lg:space-y-4">
             <div className="flex items-center gap-3 flex-shrink-0">
               <img src={Logo} alt="WTL Logo" className="h-10 sm:h-12 w-auto" />
@@ -21,13 +19,10 @@ function Footer() {
             </p>
           </div>
 
-          {/* Column 2: Quick Links */}
           <FooterColumn title="Quick Links" links={NAV_LINKS} />
 
-          {/* Column 3: Services */}
           <FooterColumn title="Our Services" links={SERVICE_LINKS} />
 
-          {/* Column 4: Follow Us */}
           <SocialLinks />
         </div>
 
