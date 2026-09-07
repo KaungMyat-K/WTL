@@ -6,7 +6,7 @@ interface NavLinksProps {
 
 function NavLinks({ links }: NavLinksProps) {
   return (
-    <div className="hidden lg:flex items-center space-x-6 xl:space-x-8 bg-white px-6 xl:px-6 py-2 rounded-xl shadow-md">
+    <div className="hidden lg:flex items-center space-x-6 xl:space-x-8  px-6 xl:px-6  ">
       {links.map((link) => (
         <a
           key={link.label}

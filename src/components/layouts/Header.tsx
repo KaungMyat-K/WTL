@@ -5,6 +5,7 @@ import LanguageDropdown from "./LanguageDropdown";
 import MobileMenu from "./MobileMenu";
 import { LANGUAGES, Logo, NAV_LINKS, ROUTES } from "../../config/site";
 import Button from "../ui/Button";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [isMobileOpen, setIsMobileOpen] = useState<boolean>(false);
@@ -15,18 +16,21 @@ function Header() {
   };
   return (
     <>
-      <nav className="sticky top-0 z-50 bg-transparent">
+      <nav className="sticky top-0 z-50 bg-white border-b border-white/20 shadow-md">
         <div className="px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16 sm:h-20">
+          <div className="flex justify-between items-center h-12 sm:h-14">
             {/* Left: Logo & Links */}
             <div className="flex items-center space-x-2 xs:space-x-4 sm:space-x-8 gap-1">
-              <div className="flex-shrink-0 flex items-center bg-white rounded-md shadow-md mt-1">
+              <Link
+                to="/"
+                className="flex-shrink-0 flex items-center bg-white mt-1"
+              >
                 <img
                   src={Logo}
                   alt="WTL Logo"
-                  className="h-7 sm:h-8 md:h-9 w-auto"
+                  className="h-8 sm:h-9 md:h-10 w-auto"
                 />
-              </div>
+              </Link>
               <NavLinks links={NAV_LINKS} />
             </div>
 
@@ -47,7 +51,7 @@ function Header() {
               <div className="flex lg:hidden items-center">
                 <button
                   onClick={() => setIsMobileOpen((prev) => !prev)}
-                  className="inline-flex items-center justify-center p-1.5 sm:p-2 shadow-md rounded-md text-secondary hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary"
+                  className="inline-flex items-center justify-center p-1.5 sm:p-2 bg-gray-50 rounded-md text-secondary hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary"
                   aria-expanded={isMobileOpen}
                 >
                   <span className="sr-only">Toggle menu</span>

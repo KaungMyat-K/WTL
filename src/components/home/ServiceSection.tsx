@@ -8,9 +8,9 @@ function ServiceSection() {
   };
 
   return (
-    <section className="py-16 sm:py-24 lg:py-32 bg-gray-200 overflow-hidden">
+    <section className="py-16 sm:py-24 lg:py-32 bg-[#e7eef1] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 md:gap-8 lg:gap-12 mb-12 md:mb-16 lg:mb-24">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 md:gap-8 lg:gap-12 mb-12 md:mb-16 lg:mb-36">
           <div className="lg:w-5/12 w-full">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-800 text-center lg:text-left">
               COMPREHENSIVE <br />

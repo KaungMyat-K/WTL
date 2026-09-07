@@ -13,7 +13,7 @@ const SLIDES: SlideData[] = [
     titleSecondary: "SOLUTIONS",
     description:
       "Connecting businesses worldwide with efficient and cost-effective shipping solutions.",
-    buttonText: "Get A Quote",
+    buttonText: "Contact Us",
   },
   {
     id: 1,
@@ -23,7 +23,7 @@ const SLIDES: SlideData[] = [
     titleSecondary: "AIR CARGO",
     description:
       "Time-sensitive deliveries made easy with our premium air freight services across the globe.",
-    buttonText: "Get A Quote",
+    buttonText: "Contact Us",
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const SLIDES: SlideData[] = [
     titleSecondary: "SOLUTIONS",
     description:
       "State-of-the-art warehousing and distribution centers to optimize your supply chain.",
-    buttonText: "Get A Quote",
+    buttonText: "Contact Us",
   },
 ];
 
@@ -63,7 +63,7 @@ function HeroSection() {
   };
   return (
     <section
-      className="relative w-full lg:h-screen h-[96vh] md:h-[80vh] overflow-hidden bg-gray-900 -mt-20"
+      className="relative w-full lg:h-screen h-[96vh] md:h-[80vh] overflow-hidden bg-gray-900 -mt-12"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >

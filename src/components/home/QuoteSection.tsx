@@ -39,7 +39,7 @@ function QuoteSection({
           <a
             href={newCustomerHref}
             onClick={handleNewCustomer}
-            className="group inline-flex items-center justify-center text-white bg-secondary px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-3.5 rounded-md font-medium text-xs sm:text-sm md:text-base lg:text-lg transition-all duration-300 hover:bg-secondary/80 hover:scale-105 hover:shadow-xl min-w-[140px] sm:min-w-[160px] md:min-w-[180px] lg:min-w-[200px]"
+            className="group inline-flex items-center justify-center text-white bg-secondary px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-3.5 rounded-md font-medium text-xs sm:text-sm md:text-base lg:text-lg transition-all duration-300  hover:scale-105 hover:shadow-xl min-w-[140px] sm:min-w-[160px] md:min-w-[180px] lg:min-w-[200px]"
           >
             <span className="whitespace-nowrap">NEW CUSTOMER</span>
           </a>
@@ -47,7 +47,7 @@ function QuoteSection({
           <a
             href={existingCustomerHref}
             onClick={handleExistionCustomer}
-            className="group inline-flex items-center justify-center text-white bg-white/20 backdrop-blur-sm px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-3.5 rounded-md font-medium text-xs sm:text-sm md:text-base lg:text-lg transition-all duration-300 hover:bg-secondary/80 hover:scale-105 hover:shadow-xl min-w-[140px] sm:min-w-[160px] md:min-w-[180px] lg:min-w-[200px]"
+            className="group inline-flex items-center justify-center text-white bg-white/20 backdrop-blur-sm px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-3.5 rounded-md font-medium text-xs sm:text-sm md:text-base lg:text-lg transition-all duration-300  hover:scale-105 hover:shadow-xl min-w-[140px] sm:min-w-[160px] md:min-w-[180px] lg:min-w-[200px]"
           >
             <span className="whitespace-nowrap">EXISTING CUSTOMER</span>
           </a>

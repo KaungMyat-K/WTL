@@ -22,16 +22,9 @@ const SECONDARY_SERVICES: ServiceTag[] = [
   { label: "Less Than Container Load", href: "#lcl" },
 ];
 
-// Data array for stats
-const STATS: StatItem[] = [
-  { value: "10K+", label: "Shipments Delivered" },
-  { value: "50+", label: "Countries Served" },
-  { value: "99%", label: "Satisfaction Rate" },
-];
-
 function HeroSection() {
   return (
-    <section className="relative py-16 sm:py-20 md:py-28 lg:py-36 xl:py-40 -mt-20 w-full lg:h-[60vh] xl:h-screen overflow-hidden flex items-center bg-gray-50">
+    <section className="relative py-16 sm:py-20 md:py-28 lg:py-36 xl:py-40 -mt-12 w-full lg:h-[60vh] xl:h-screen overflow-hidden flex items-center bg-gray-50">
       {/* Radial Glow Effects */}
       <div className="absolute top-1/4 right-1/4 w-48 sm:w-64 md:w-80 lg:w-96 h-48 sm:h-64 md:h-80 lg:h-96 bg-secondary/20 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 left-1/4 w-48 sm:w-64 md:w-80 lg:w-96 h-48 sm:h-64 md:h-80 lg:h-96 bg-secondary/10 rounded-full blur-3xl" />
@@ -77,23 +70,6 @@ function HeroSection() {
             >
               {service.label}
             </a>
-          ))}
-        </div>
-
-        {/* Stats */}
-        <div className="flex flex-wrap justify-center items-center mt-6 sm:mt-8 md:mt-10">
-          {STATS.map((stat, index) => (
-            <div
-              key={stat.label}
-              className={`text-center px-4 sm:px-6 md:px-10 py-2 ${
-                index !== 0 ? "border-l border-gray-200" : ""
-              }`}
-            >
-              <p className="text-xl sm:text-2xl md:text-4xl font-bold text-secondary">
-                {stat.value}
-              </p>
-              <p className="text-gray-500 text-xs sm:text-sm">{stat.label}</p>
-            </div>
           ))}
         </div>
       </div>

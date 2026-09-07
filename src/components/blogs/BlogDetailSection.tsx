@@ -13,7 +13,7 @@ function BlogDetailSection({
   imageUrl = seaFreightImg,
 }: BlogPostProps) {
   return (
-    <section className="py-12 md:py-16 lg:py-36 bg-[#e7eef1] -mt-20">
+    <section className="py-12 md:py-16 lg:py-36 bg-[#e7eef1] -mt-12">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
         {/* Category */}
         <div className="text-center mb-6 md:mb-8">

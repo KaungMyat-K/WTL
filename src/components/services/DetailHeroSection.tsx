@@ -5,7 +5,7 @@ interface DetailHeroSectionProps {
 
 function DetailHeroSection({ title, imageSrc }: DetailHeroSectionProps) {
   return (
-    <section className="-mt-20 pt-28 md:pt-32 lg:pt-40">
+    <section className="-mt-12 pt-28 md:pt-32 lg:pt-40">
       <div>
         {/* Title & Static Breadcrumbs */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 mb-10 sm:mb-12 md:mb-16 lg:mb-20">

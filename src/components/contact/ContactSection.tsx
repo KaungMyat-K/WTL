@@ -17,7 +17,7 @@ function ContactSection({
   titleLine2 = "OVER THE WORLD",
 }: HeroLocationProps) {
   return (
-    <section className="relative overflow-hidden bg-gray-900 -mt-20 pt-10">
+    <section className="relative overflow-hidden bg-gray-900  ">
       {/* Background Image for Desktop */}
       <div className="hidden md:block absolute inset-0 mt-52 mb-32">
         <img
@@ -30,7 +30,7 @@ function ContactSection({
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-32 xl:py-40">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
         <div className="max-w-3xl relative">
           {/* Background image for mobile only */}
           <div className="absolute inset-0 -mx-4 sm:mx-0 sm:hidden">

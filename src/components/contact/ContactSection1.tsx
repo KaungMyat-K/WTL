@@ -42,7 +42,7 @@ function ContactSection1() {
   };
 
   return (
-    <section className="relative py-16 sm:py-20 md:py-28 lg:py-32 -mt-20 overflow-hidden">
+    <section className="relative py-16 sm:py-20 md:py-28 lg:py-32 -mt-12 overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         {/* Square 1 - Responsive */}

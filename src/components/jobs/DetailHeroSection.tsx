@@ -9,7 +9,7 @@ function DetailHeroSection({
 }: JobHeaderProps) {
   return (
     <section
-      className={`relative bg-gray-900 -mt-20 pt-32 pb-10 sm:pb-12 md:pb-16 lg:pt-40 lg:pb-20 xl:pt-48 xl:pb-28 2xl:pt-56 2xl:pb-36 ${className}`}
+      className={`relative bg-gray-900 -mt-12 pt-32 pb-10 sm:pb-12 md:pb-16 lg:pt-40 lg:pb-20  xl:pb-28 2xl:pb-36 ${className}`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl">

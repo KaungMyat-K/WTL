@@ -35,11 +35,11 @@ const locationData: Location[] = [
       "Room 609, No.82, Zhongshan North No.1 Road, Hongkou District, Shanghai, China",
     phone: "+86 21 5677 0951",
     contacts: [
+      { name: "Eddie Hsu", email: "eddie@sha.wtl-group.cn" },
       {
         name: "Kevin Souchaud (Overseas Dept Manager)",
         email: "kevin@wtl-group.cn",
       },
-      { name: "Eddie Hsu", email: "eddie@sha.wtl-group.cn" },
     ],
   },
   {
