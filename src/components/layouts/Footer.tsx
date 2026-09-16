@@ -1,53 +1,71 @@
-import { Logo, NAV_LINKS, SERVICE_LINKS } from "../../config/site";
-import FooterColumn from "./FooterColumn";
+import { useTranslation } from "react-i18next";
+import Button from "../ui/Button";
+import FooterLinks from "./FooterLinks";
 import SocialLinks from "./SocialLinks";
+import { siteConfig } from "../../config/site1";
+import { Images } from "../images";
+import type { LinkItem } from "../../types/index1";
+import type { ServiceItem } from "../../types";
 
 function Footer() {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
+  const navLinks: LinkItem[] = siteConfig.navLinks.map((link) => ({
+    ...link,
+    label: t(`nav.links.${link.id}`),
+  }));
+
+  const services = t("services.servicesList.items", {
+    returnObjects: true,
+  }) as ServiceItem[];
+  const serviceLinks: LinkItem[] = services.map((service) => {
+    const link = siteConfig.serviceLinks.find((item) => item.id === service.id);
+    return {
+      id: service.id,
+      label: service.title,
+      href: link?.href ?? "#",
+    };
+  });
 
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-8">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12">
           <div className="flex flex-col items-start gap-4 lg:block lg:space-y-4">
-            {/* Logo, Description and Buttons */}
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full gap-3 sm:gap-6 lg:flex-col lg:items-start lg:gap-4">
-              {/* Logo and Description - Left Side */}
               <div className="flex flex-col items-start gap-2">
                 <div className="flex items-center gap-3 flex-shrink-0">
                   <img
-                    src={Logo}
-                    alt="WTL Logo"
+                    src={Images.logo.src}
+                    alt={Images.logo.alt}
                     className="h-10 sm:h-12 w-auto"
                   />
                 </div>
                 <p className="text-gray-400 text-sm leading-relaxed max-w-sm text-left">
-                  We provide end-to-end logistics services to meet all your
-                  shipping and supply chain needs worldwide.
+                  {t("nav.footer.description")}
                 </p>
               </div>
 
-              {/* Two Buttons - Stacked Top & Bottom on Desktop */}
               <div className="flex flex-row items-center gap-3 mt-2 sm:flex-col sm:items-stretch lg:flex-col lg:items-start lg:mt-0">
-                <a
-                  href="#"
-                  className="inline-flex items-center justify-center flex-1 lg:flex-none lg:w-auto px-4 sm:px-5 py-2.5 bg-secondary  text-white text-sm font-medium rounded-md transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                <Button
+                  variant="primary"
+                  className="flex-1 lg:flex-none lg:w-auto px-4 sm:px-5 py-2.5 text-sm"
                 >
-                  Customer Portal
-                </a>
-                <a
-                  href="#"
-                  className="inline-flex items-center justify-center flex-1 lg:flex-none lg:w-auto px-4 sm:px-5 py-2.5 border border-white  text-white text-sm font-medium rounded-md transition-all duration-300 hover:scale-105"
+                  {t("button.customerPortalButton")}
+                </Button>
+                <Button
+                  variant="outline"
+                  className="flex-1 lg:flex-none lg:w-auto px-4 sm:px-5 py-2.5 text-sm"
                 >
-                  Employee Portal
-                </a>
+                  {t("button.employeePortalButton")}
+                </Button>
               </div>
             </div>
           </div>
 
-          <FooterColumn title="Quick Links" links={NAV_LINKS} />
+          <FooterLinks title={t("nav.footer.company")} links={navLinks} />
 
-          <FooterColumn title="Our Services" links={SERVICE_LINKS} />
+          <FooterLinks title={t("nav.footer.services")} links={serviceLinks} />
 
           <SocialLinks />
         </div>

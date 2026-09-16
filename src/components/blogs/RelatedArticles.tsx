@@ -1,6 +1,7 @@
 import type { BlogPost } from "../../types";
 import BlogCard from "./BlogCard";
 import seaFreightImg from "../../assets/home/air-pic.jpg";
+import { useTranslation } from "react-i18next";
 
 interface RelatedArticlesProps {
   articles?: BlogPost[];
@@ -40,6 +41,8 @@ function RelatedArticles({
   articles = BLOG_POSTS,
   title = "Related Articles",
 }: RelatedArticlesProps) {
+  const { t } = useTranslation();
+
   return (
     <section className="py-10 sm:py-14 lg:py-20 bg-[#e7eef1]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,7 +50,7 @@ function RelatedArticles({
         <div className="flex items-center mb-8 sm:mb-12 lg:mb-16">
           <div>
             <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-secondary">
-              {title}
+              {t("blogs.details.relatedArticles")}
             </h2>
           </div>
         </div>

@@ -42,10 +42,12 @@ function MobileMenu({ isOpen, links, onClose }: MobileMenuProps) {
         ))}
 
         <Button
+          variant="primary"
           onClick={handleClick}
-          name="Customer Portal"
-          className="text-white bg-secondary font-medium transition-all duration-200 px-3 py-2 rounded-md w-full text-center hover:bg-[#b6530e] active:scale-95"
-        />
+          className="w-full px-3 py-2 text-center"
+        >
+          Customer Portal
+        </Button>
       </div>
     </div>
   );

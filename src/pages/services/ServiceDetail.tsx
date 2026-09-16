@@ -1,27 +1,36 @@
 import DetailHeroSection from "../../components/services/DetailHeroSection";
 import OverViewSection from "../../components/services/OverViewSection";
 import KeyFeatureSection from "../../components/services/KeyFeatureSection";
-import { Navigate, useParams } from "react-router-dom";
-import { SERVICES_DATA } from "../../static/serviceData";
+import { useParams } from "react-router-dom";
 import CtaSection from "../../components/contact/CtaSection";
+import { useTranslation } from "react-i18next";
+import type { ServiceItem } from "../../types/index1";
+import { Images } from "../../components/images";
 
 function ServiceDetail() {
+  const { t } = useTranslation();
   const { serviceId } = useParams<{ serviceId: string }>();
-  const currentService = SERVICES_DATA.find(
-    (service) => service.id === serviceId
+
+  const translatedItems = t("services.servicesList.items", {
+    returnObjects: true,
+  }) as ServiceItem[];
+
+  const currentService = Array.isArray(translatedItems)
+    ? translatedItems.find((item) => item.id === serviceId)
+    : undefined;
+
+  const img = Images?.services?.img?.find(
+    (img) => img.id === currentService.id
   );
 
-  if (!currentService) {
-    return <Navigate to="/services" replace />;
-  }
   return (
     <>
-      <DetailHeroSection
-        title={currentService.title}
-        imageSrc={currentService.image}
+      <DetailHeroSection title={currentService.title} img={img?.src || ""} />
+      <OverViewSection
+        title={currentService.details.overview.title}
+        content={currentService.details.overview.content}
       />
-      <OverViewSection />
-      <KeyFeatureSection />
+      <KeyFeatureSection features={currentService.details.keyFeatures} />
       <CtaSection />
     </>
   );

@@ -1,20 +1,26 @@
-import LearnMoreLink from "../blogs/LearnMoreLink";
+import LearnMoreLink from "../ui/LearnMoreLink";
 import { FEATURED_POSTS, RECENT_POSTS } from "../../static/blogData";
 import FeaturedPostCard from "../blogs/FeaturedPostCard";
 import RecentPostCard from "../blogs/RecentPostCard";
+import { useTranslation } from "react-i18next";
 
 function LatestNewsSection() {
+  const { t } = useTranslation();
+
   return (
     <section className="py-16 sm:py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-12 sm:mb-16 lg:mb-20">
           <div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">
-              Latest <span className="text-secondary">News & Articles</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-800">
+              {t("home.blogs.primaryTitle")}
             </h2>
           </div>
 
-          <LearnMoreLink className="hidden lg:inline-flex text-base sm:text-lg md:text-xl lg:text-2xl" />
+          <LearnMoreLink
+            className="hidden lg:inline-flex"
+            title={t("button.learnMoreButton")}
+          />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -38,7 +44,10 @@ function LatestNewsSection() {
         </div>
 
         <div className="text-center mt-10 sm:mt-12 lg:hidden">
-          <LearnMoreLink className="inline-flex text-base sm:text-lg" />
+          <LearnMoreLink
+            className="inline-flex"
+            title={t("button.learnMoreButton")}
+          />
         </div>
       </div>
     </section>

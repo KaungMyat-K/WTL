@@ -1,0 +1,214 @@
+{
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "jobs": "Jobs",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "items": [
+        {
+          "id": "seaFreight",
+          "primaryTitle": "RELIABLE SEA FREIGHT",
+          "secondaryTitle": "SOLUTIONS",
+          "description": "Connecting businesses worldwide with efficient and cost-effective shipping solutions."
+        },
+        {
+          "id": "airFreight",
+          "primaryTitle": "Air Freight",
+          "secondaryTitle": "FAST & SECURE",
+          "description": "Time-sensitive deliveries made easy with our premium air freight services across the globe."
+        },
+        {
+          "id": "roadFreight",
+          "primaryTitle": "SMART STORAGE",
+          "secondaryTitle": "SOLUTIONS",
+          "description": "State-of-the-art warehousing and distribution centers to optimize your supply chain."
+        }
+      ],
+      "button": "Contact Us"
+    },
+    "clients": {
+      "title": "Trusted by"
+    },
+    "services": {
+      "primaryTitle": "",
+      "secondaryTitle": "",
+      "description": "",
+      "button": "Explore Our Services"
+    },
+    "getAQuote": {
+      "title": "",
+      "description": "",
+      "newCustomerButton": "",
+      "existingCustomerButton": ""
+    },
+    "blogs": {
+      "primaryTitle": "",
+      "secondaryTitle": "",
+      "button": ""
+    }
+  },
+  "services": {
+    "hero": {
+      "primaryTitle": "RELIABLE SEA FREIGHT",
+      "secondaryTitle": "SOLUTIONS",
+      "description": "Connecting businesses worldwide with efficient and cost-effective shipping solutions.",
+      "stats": [
+        {
+          "id": 1,
+          "title": "Shipments Delivered",
+          "value": "10K+"
+        },
+        {
+          "id": 2,
+          "title": "Countries Served",
+          "value": "50+"
+        },
+        {
+          "id": 3,
+          "title": "Satisfaction Rate",
+          "value": "100%"
+        }
+      ]
+    },
+    "servicesList": {
+      "primaryTitle": "",
+      "secondaryTitle": "",
+      "description": "",
+      "button": "",
+      "items": [
+        {
+          "id": 1,
+          "title": "",
+          "description": "",
+          "shortDescription": "",
+          "details": {
+            "overview": {
+              "title": "",
+              "content": ""
+            },
+            "keyFeatures": {
+              "title": "",
+              "features": [
+                {
+                  "id": 1,
+                  "title": "",
+                  "description": ""
+                },
+                {
+                  "id": 1,
+                  "title": "",
+                  "description": ""
+                },
+                {
+                  "id": 1,
+                  "title": "",
+                  "description": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 2,
+          "title": "",
+          "description": "",
+          "shortDescription": "",
+          "details": {
+            "overview": {
+              "title": "",
+              "content": ""
+            },
+            "keyFeatures": {
+              "title": "",
+              "features": [
+                {
+                  "id": 1,
+                  "title": "",
+                  "description": ""
+                },
+                {
+                  "id": 1,
+                  "title": "",
+                  "description": ""
+                },
+                {
+                  "id": 1,
+                  "title": "",
+                  "description": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 3,
+          "title": "",
+          "description": "",
+          "shortDescription": "",
+          "details": {
+            "overview": {
+              "title": "",
+              "content": ""
+            },
+            "keyFeatures": {
+              "title": "",
+              "features": [
+                {
+                  "id": 1,
+                  "title": "",
+                  "description": ""
+                },
+                {
+                  "id": 1,
+                  "title": "",
+                  "description": ""
+                },
+                {
+                  "id": 1,
+                  "title": "",
+                  "description": ""
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "jobs": {
+    "hero": {
+      "title": "",
+      "subtitle": ""
+    },
+    "button": ""
+  },
+  "blogs": {
+    "hero": {
+      "title": "",
+      "subtitle": ""
+    },
+    "button": ""
+  },
+  "contact": {
+    "hero": {
+      "title": "",
+      "description": "",
+      "form": {
+        "name": "",
+        "email": "",
+        "message": "",
+        "button": ""
+      }
+    },
+    "location": {
+      "hero": {
+        "title": "",
+        "subtitle": ""
+      }
+    }
+  }
+}

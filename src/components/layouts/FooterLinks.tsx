@@ -5,7 +5,7 @@ interface FooterColumnProps {
   links: LinkItem[];
 }
 
-function FooterColumn({ title, links }: FooterColumnProps) {
+function FooterLinks({ title, links }: FooterColumnProps) {
   return (
     <div className="flex flex-row items-start justify-between lg:block lg:text-left">
       <h4 className="text-lg font-bold text-white flex-shrink-0">{title}</h4>
@@ -25,4 +25,4 @@ function FooterColumn({ title, links }: FooterColumnProps) {
   );
 }
 
-export default FooterColumn;
+export default FooterLinks;

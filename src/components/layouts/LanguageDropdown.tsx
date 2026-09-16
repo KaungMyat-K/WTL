@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import type { Language } from "../../types";
+import type { Language } from "../../types/index1";
 
 interface LanguageDropdownProps {
   languages: Language[];
@@ -35,8 +35,8 @@ function LanguageDropdown({
         aria-label="Select language"
       >
         <img
-          src={currentLang.flag}
-          alt={currentLang.name}
+          src={currentLang.img.src}
+          alt={currentLang.img.alt}
           className="w-6 h-6 sm:w-8 sm:h-8 object-cover rounded-full"
         />
       </button>
@@ -45,7 +45,7 @@ function LanguageDropdown({
         <div className="absolute -right-1 mt-2 w-12 bg-white rounded-lg shadow-md border border-gray-200 z-50">
           {languages.map((lang) => (
             <button
-              key={lang.code}
+              key={lang.id}
               onClick={() => {
                 onSelectLanguage(lang);
                 setIsOpen(false);
@@ -53,8 +53,8 @@ function LanguageDropdown({
               className="flex items-center justify-center w-full px-2 py-2.5 hover:bg-gray-100 transition-colors duration-150"
             >
               <img
-                src={lang.flag}
-                alt={lang.name}
+                src={lang.img.src}
+                alt={lang.img.alt}
                 className="w-6 h-6 object-cover rounded-sm"
               />
             </button>

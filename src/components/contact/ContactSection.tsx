@@ -1,60 +1,35 @@
-import LocationList from "./LocationList";
-import mapBg from "../../assets/home/w1.png";
+import { useTranslation } from "react-i18next";
+import ContactForm from "./ContactForm";
 
-interface HeroLocationProps {
-  imageSrc?: string;
-  imageAlt?: string;
-  subtitle?: string;
-  titleLine1?: string;
-  titleLine2?: string;
-}
-
-function ContactSection({
-  imageSrc = mapBg,
-  imageAlt = "Locations",
-  subtitle = "Find Us Here",
-  titleLine1 = "WE WORK ALL",
-  titleLine2 = "OVER THE WORLD",
-}: HeroLocationProps) {
+function ContactSection() {
+  const { t } = useTranslation();
   return (
-    <section className="relative overflow-hidden bg-gray-900  ">
-      {/* Background Image for Desktop */}
-      <div className="hidden md:block absolute inset-0 mt-52 mb-32">
-        <img
-          src={imageSrc}
-          alt={imageAlt}
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-gray-900/70 to-gray-900/50" />
-        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/80 to-transparent" />
+    <section className="relative py-16 sm:py-20 md:py-28 lg:py-32 -mt-12 overflow-hidden">
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute left-1 top-[5rem] md:-left-1 md:top-[9rem] lg:top-40 lg:-left-1 xl:top-40 xl:left-28 w-20 h-36 md:w-36 md:h-[13rem] lg:w-32 lg:h-[11rem] xl:w-44 xl:h-64 bg-secondary" />
       </div>
 
-      {/* Main Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
-        <div className="max-w-3xl relative">
-          {/* Background image for mobile only */}
-          <div className="absolute inset-0 -mx-4 sm:mx-0 sm:hidden">
-            <img
-              src={imageSrc}
-              alt={imageAlt}
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gray-900/20" />
-            <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/80 to-transparent" />
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 sm:mt-8 md:mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16">
+          <div className="text-left">
+            <div className="lg:w-5/12">
+              <h1 className="whitespace-pre-line text-4xl md:text-6xl lg:text-5xl xl:text-7xl font-bold text-gray-800 mb-4">
+                {t("contact.hero.primaryTitle")}{" "}
+                <span className="text-secondary">
+                  {t("contact.hero.secondaryTitle")}
+                </span>
+              </h1>
+            </div>
+
+            <p className="text-gray-500 text-xs sm:text-sm md:text-base lg:text-lg max-w-md mb-6 sm:mb-8 leading-relaxed">
+              {t("contact.hero.description")}
+            </p>
           </div>
 
-          {/* Text Content */}
-          <div className="relative z-10 px-4 sm:px-0 py-8 sm:py-0">
-            <span className="inline-block text-secondary text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">
-              {subtitle}
-            </span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-50 leading-tight">
-              {titleLine1} <br className="hidden sm:block" />
-              {titleLine2}
-            </h1>
+          <div>
+            <ContactForm />
           </div>
         </div>
-        <LocationList />
       </div>
     </section>
   );

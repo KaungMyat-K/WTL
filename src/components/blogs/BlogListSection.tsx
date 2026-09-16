@@ -1,6 +1,8 @@
 import type { BlogPost } from "../../types";
 import BlogCard from "./BlogCard";
 import seaFreightImg from "../../assets/home/air-pic.jpg";
+import Button from "../ui/Button";
+import { useTranslation } from "react-i18next";
 
 const BLOG_POSTS: BlogPost[] = [
   {
@@ -56,6 +58,8 @@ function BlogListSection({
   posts = BLOG_POSTS,
   onLearnMoreClick,
 }: BlogSectionProps) {
+  const { t } = useTranslation();
+
   return (
     <section className="py-16 sm:py-24 bg-[#e7eef1]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -68,18 +72,13 @@ function BlogListSection({
 
         {/* View All Button */}
         <div className="text-center mt-20 sm:mt-28 md:mt-32">
-          <a
-            href="#"
-            onClick={(e) => {
-              if (onLearnMoreClick) {
-                e.preventDefault();
-                onLearnMoreClick();
-              }
-            }}
-            className="group inline-flex items-center gap-2 bg-secondary text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-xl font-medium text-sm sm:text-base transition-all duration-300 hover:bg-secondary/80 hover:scale-105 hover:shadow-xl"
+          <Button
+            variant="primary"
+            onClick={onLearnMoreClick}
+            className="px-6 sm:px-8 py-3 sm:py-3.5  text-xs sm:text-sm md:text-base lg:text-lg"
           >
-            Learn More
-          </a>
+            {t("button.learnMoreButton")}
+          </Button>
         </div>
       </div>
     </section>

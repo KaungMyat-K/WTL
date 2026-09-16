@@ -1,4 +1,5 @@
 import type { Job } from "../../types";
+import { Icons } from "../icons";
 
 interface JobCardProps {
   job: Job;
@@ -19,7 +20,11 @@ function JobCard({ job }: JobCardProps) {
 
         <div className="mt-3 sm:mt-4 pt-3 sm:pt-4 flex justify-between">
           <div className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10">
-            <svg
+            <Icons.rightArrow
+              strokeWidth="1.3"
+              className="h-6 w-6 sm:h-6 sm:w-6 md:h-7 md:w-7 mt-1 transition-all duration-75 ease-in-out group-hover:translate-x-3 group-hover:text-white"
+            />
+            {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-7 w-7 sm:h-8 sm:w-8 md:h-9 md:w-9 transition-all duration-75 ease-in-out group-hover:translate-x-3 group-hover:text-white"
               fill="none"
@@ -32,23 +37,13 @@ function JobCard({ job }: JobCardProps) {
                 strokeLinejoin="round"
                 d="M13 7l5 5m0 0l-5 5m5-5H6"
               />
-            </svg>
+            </svg> */}
           </div>
           <div className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1}
-              stroke="currentColor"
-              className="h-7 w-7 sm:h-8 sm:w-8 md:h-9 md:w-9 transition-all duration-75 group-hover:text-white"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-              />
-            </svg>
+            <Icons.checkmark
+              strokeWidth="1"
+              className="h-7 w-7 sm:h-7 sm:w-7 md:h-9 md:w-9 transition-all duration-75 group-hover:text-white"
+            />
           </div>
         </div>
       </div>
