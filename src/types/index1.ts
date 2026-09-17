@@ -1,7 +1,7 @@
 export type Language = {
   id: string;
   name: string;
-  img?: Image;
+  img: Image;
 };
 
 export type LinkItem = {

@@ -23,6 +23,10 @@ function ServiceDetail() {
     (img) => img.id === currentService.id
   );
 
+  if (!currentService) {
+    return <div>Service not found.</div>;
+  }
+
   return (
     <>
       <DetailHeroSection title={currentService.title} img={img?.src || ""} />

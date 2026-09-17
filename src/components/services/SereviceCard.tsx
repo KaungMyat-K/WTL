@@ -4,7 +4,7 @@ import LearnMoreLink from "../ui/LearnMoreLink";
 interface ServiceRowProps {
   service: ServiceItem;
   isLast: boolean;
-  learnMoreText?: string;
+  learnMoreText: string;
   href: string;
 }
 

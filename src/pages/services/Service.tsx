@@ -2,7 +2,7 @@ import CtaSection from "../../components/contact/CtaSection";
 import ClientMarquee from "../../components/home/ClientMarquee";
 import QuoteSection from "../../components/home/QuoteSection";
 import HeroSection from "../../components/services/HeroSection";
-import ServiceSection from "../../components/services/ServiceSection";
+import ServiceListSection from "../../components/services/ServiceListSection";
 
 function Service() {
   return (
@@ -10,7 +10,7 @@ function Service() {
       <HeroSection />
       <ClientMarquee />
       <QuoteSection />
-      <ServiceSection />
+      <ServiceListSection />
       <CtaSection />
     </>
   );

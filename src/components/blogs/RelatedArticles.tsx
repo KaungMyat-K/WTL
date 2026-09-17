@@ -34,13 +34,9 @@ const BLOG_POSTS: BlogPost[] = [
 
 interface RelatedArticlesProps {
   articles?: BlogPost[];
-  title?: string;
 }
 
-function RelatedArticles({
-  articles = BLOG_POSTS,
-  title = "Related Articles",
-}: RelatedArticlesProps) {
+function RelatedArticles({ articles = BLOG_POSTS }: RelatedArticlesProps) {
   const { t } = useTranslation();
 
   return (

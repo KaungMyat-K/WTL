@@ -5,7 +5,7 @@ import { Images } from "../images";
 import { siteConfig } from "../../config/site1";
 import { useMemo } from "react";
 
-function ServiceSection() {
+function ServiceListSection() {
   const { t } = useTranslation();
 
   const translatedItems = t("services.servicesList.items", {
@@ -24,8 +24,8 @@ function ServiceSection() {
           ...item,
           img: {
             id: item.id,
-            src: imgData?.src || "",
-            alt: imgData?.alt || item.title,
+            src: imgData.src,
+            alt: imgData.alt,
           },
         };
       })
@@ -69,4 +69,4 @@ function ServiceSection() {
   );
 }
 
-export default ServiceSection;
+export default ServiceListSection;
