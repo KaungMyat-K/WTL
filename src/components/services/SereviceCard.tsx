@@ -46,8 +46,8 @@ function SereviceCard({
 
       <div className="relative h-48 sm:h-52 md:h-56 lg:h-64 overflow-hidden rounded-xl">
         <img
-          src={service.img.src}
-          alt={service.img.alt}
+          src={service?.img?.src ?? ""}
+          alt={service?.img?.alt ?? ""}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />

@@ -19,13 +19,11 @@ function ServiceDetail() {
     ? translatedItems.find((item) => item.id === serviceId)
     : undefined;
 
-  const img = Images?.services?.img?.find(
-    (img) => img.id === currentService.id
-  );
-
   if (!currentService) {
     return <div>Service not found.</div>;
   }
+
+  const img = Images.services.img.find((img) => img.id === currentService.id);
 
   return (
     <>

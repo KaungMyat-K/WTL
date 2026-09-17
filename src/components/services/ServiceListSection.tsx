@@ -56,7 +56,7 @@ function ServiceListSection() {
             return (
               <SereviceCard
                 key={service.id}
-                href={serviceLinkMap.get(service.id)}
+                href={serviceLinkMap.get(service.id)!}
                 service={service}
                 isLast={index === services.length - 1}
                 learnMoreText={t("button.learnMoreButton")}

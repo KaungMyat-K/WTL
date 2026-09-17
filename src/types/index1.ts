@@ -50,7 +50,7 @@ export interface ServiceItem {
   title: string;
   description?: string;
   shortDescription?: string;
-  details?: ServiceDetails;
+  details: ServiceDetails;
   img?: Image;
 }
 
