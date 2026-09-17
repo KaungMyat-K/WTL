@@ -19,7 +19,7 @@ function ServiceListSection() {
 
   const services = Array.isArray(translatedItems)
     ? translatedItems.map((item) => {
-        const imgData = Images.services.img.find((img) => img.id === item.id);
+        const imgData = Images.services.img.find((img) => img.id === item.id)!;
         return {
           ...item,
           img: {
