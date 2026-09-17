@@ -10,18 +10,9 @@ function HeroSection() {
   const [isPaused, setIsPaused] = useState<boolean>(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  const translatedItems = t("home.hero.items", {
-    returnObjects: true,
-  }) as HeroItem[];
+  const SLIDES = Images.home;
 
-  const SLIDES = translatedItems.map((item) => {
-    const staticData = Images.home.find((img) => img.id === item.id);
-    return {
-      ...item,
-      image: staticData?.src || "",
-      alt: staticData?.alt || item.primaryTitle,
-    };
-  });
+  const heroContent = t("home.hero.items", { returnObjects: true }) as HeroItem;
 
   const nextSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev + 1) % SLIDES.length);
@@ -62,7 +53,7 @@ function HeroSection() {
               }`}
             >
               <img
-                src={slide.image}
+                src={slide.src}
                 alt={slide.alt}
                 className="w-full h-full object-cover"
               />
@@ -71,11 +62,13 @@ function HeroSection() {
               <div className="absolute inset-0 flex items-center">
                 <div className="max-w-3xl px-4 sm:px-6 lg:px-10 pt-10">
                   <h1 className="text-6xl sm:text-7xl md:text-7xl lg:text-8xl xl:text-8xl font-bold text-secondary mb-3 sm:mb-4">
-                    {slide.primaryTitle} <br />
-                    <span className="text-white">{slide.secondaryTitle}</span>
+                    {t("home.hero.items.primaryTitle")} <br />
+                    <span className="text-white">
+                      {t("home.hero.items.secondaryTitle")}
+                    </span>
                   </h1>
                   <p className="text-lg sm:text-xl md:text-xl text-gray-200 mb-6 sm:mb-8">
-                    {slide.description}
+                    {heroContent.description}
                   </p>
                   <div>
                     <Button

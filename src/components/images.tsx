@@ -4,7 +4,7 @@ import storageImg from "../assets/home/road-pic.jpg";
 import shipIcon from "../assets/home/ship.png";
 import roadIcon from "../assets/home/road.png";
 import airIcon from "../assets/home/air.png";
-import railIcon from "../assets/home/train.png";
+import warehousingIcon from "../assets/home/warehouse.png";
 import locations from "../assets/home/w1.png";
 import logo from "../assets/logo.png";
 
@@ -16,17 +16,17 @@ export const Images = {
   },
   home: [
     {
-      id: "sea-freight",
+      id: "1",
       src: seaFreightImg,
       alt: "Sea freight container ship",
     },
     {
-      id: "air-freight",
+      id: "2",
       src: airCargoImg,
       alt: "Cargo airplane flying",
     },
     {
-      id: "road-freight",
+      id: "3",
       src: storageImg,
       alt: "Modern warehouse logistics",
     },
@@ -44,12 +44,12 @@ export const Images = {
         alt: "Cargo airplane flying",
       },
       {
-        id: "rail-freight",
-        src: railIcon,
+        id: "warehousing-&-trucking",
+        src: warehousingIcon,
         alt: "Cargo airplane flying",
       },
       {
-        id: "road-freight",
+        id: "land-freight",
         src: roadIcon,
         alt: "Modern warehouse logistics",
       },
@@ -66,24 +66,29 @@ export const Images = {
         alt: "Cargo airplane flying",
       },
       {
-        id: "rail-freight",
+        id: "warehousing-&-trucking",
         src: airCargoImg,
         alt: "Cargo airplane flying",
       },
       {
-        id: "road-freight",
+        id: "land-freight",
         src: storageImg,
         alt: "Modern warehouse logistics",
       },
       {
-        id: "full-container-load",
+        id: "local-customs-clearance",
         src: storageImg,
-        alt: "Full Container Load",
+        alt: "Local Customs Clearance",
       },
       {
-        id: "less-than-container-load",
+        id: "special-project-cargo",
         src: storageImg,
-        alt: "Less than Container Load",
+        alt: "Special Project Cargo",
+      },
+      {
+        id: "combined-logistics",
+        src: storageImg,
+        alt: "Special Project Cargo",
       },
     ],
   },

@@ -1,4 +1,3 @@
-import logoImg from "../assets/logo.png";
 import type { Language, LinkItem } from "../types/index1";
 import ukFlagImg from "../assets/uk.png";
 import thFlagImg from "../assets/th.png";
@@ -19,7 +18,7 @@ const ROUTES = {
   SERVICE: "services",
   SERVICE_DETAIL: (slug: string) => `/services/${slug}`,
   JOBS: "jobs",
-  BLOGS: "blogs",
+  BLOGS: "news",
   CONTACT: "contact",
 };
 
@@ -59,9 +58,9 @@ const SERVICE_LINKS: LinkItem[] = [
     href: ROUTES.SERVICE_DETAIL("sea-freight"),
   },
   {
-    id: "road-freight",
+    id: "land-freight",
     label: "",
-    href: ROUTES.SERVICE_DETAIL("road-freight"),
+    href: ROUTES.SERVICE_DETAIL("land-freight"),
   },
   {
     id: "air-freight",
@@ -69,19 +68,24 @@ const SERVICE_LINKS: LinkItem[] = [
     href: ROUTES.SERVICE_DETAIL("air-freight"),
   },
   {
-    id: "rail-freight",
+    id: "warehousing-&-trucking",
     label: "",
-    href: ROUTES.SERVICE_DETAIL("rail-freight"),
+    href: ROUTES.SERVICE_DETAIL("warehousing-&-trucking"),
   },
   {
-    id: "full-container-load",
+    id: "local-customs-clearance",
     label: "",
-    href: ROUTES.SERVICE_DETAIL("full-container-load"),
+    href: ROUTES.SERVICE_DETAIL("local-customs-clearance"),
   },
   {
-    id: "less-than-container-load",
+    id: "special-project-cargo",
     label: "",
-    href: ROUTES.SERVICE_DETAIL("less-than-container-load"),
+    href: ROUTES.SERVICE_DETAIL("special-project-cargo"),
+  },
+  {
+    id: "combined-logistics",
+    label: "",
+    href: ROUTES.SERVICE_DETAIL("combined-logistics"),
   },
 ];
 
