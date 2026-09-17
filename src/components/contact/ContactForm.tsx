@@ -39,7 +39,7 @@ function ContactForm() {
   return (
     <div className="relative">
       <div className="mb-6 sm:mb-8 md:mb-10 text-left">
-        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-7xl font-bold text-secondary">
+        <h2 className=" text-4xl md:text-6xl lg:text-5xl xl:text-7xl font-bold text-secondary">
           {t("contact.hero.form.title")}
         </h2>
       </div>

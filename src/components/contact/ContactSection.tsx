@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 function ContactSection() {
   const { t } = useTranslation();
   return (
-    <section className="relative py-16 sm:py-20 md:py-28 lg:py-32 -mt-12 overflow-hidden">
+    <section className="relative py-16 sm:py-20 md:py-28 lg:py-32 -mt-3  overflow-hidden">
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute left-1 top-[5rem] md:-left-1 md:top-[9rem] lg:top-40 lg:-left-1 xl:top-40 xl:left-28 w-20 h-36 md:w-36 md:h-[13rem] lg:w-32 lg:h-[11rem] xl:w-44 xl:h-64 bg-secondary" />
       </div>

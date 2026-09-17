@@ -9,7 +9,7 @@ function HeroSection() {
   }) as ServiceItem[];
 
   return (
-    <section className="relative py-16 sm:py-20 md:py-28 lg:py-36 xl:py-40 -mt-12 w-full lg:h-[60vh] xl:h-screen overflow-hidden flex items-center bg-gray-50">
+    <section className="relative py-16 sm:py-20 md:py-28 lg:py-36 xl:py-40 md:-mt-18 -mt-12  w-full lg:h-[60vh] xl:h-screen overflow-hidden flex items-center bg-gray-50">
       <div className="absolute top-1/4 right-1/4 w-48 sm:w-64 md:w-80 lg:w-96 h-48 sm:h-64 md:h-80 lg:h-96 bg-secondary/20 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 left-1/4 w-48 sm:w-64 md:w-80 lg:w-96 h-48 sm:h-64 md:h-80 lg:h-96 bg-secondary/10 rounded-full blur-3xl" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] sm:w-[350px] md:w-[450px] lg:w-[600px] h-[200px] sm:h-[350px] md:h-[450px] lg:h-[600px] bg-secondary/5 rounded-full blur-3xl" />

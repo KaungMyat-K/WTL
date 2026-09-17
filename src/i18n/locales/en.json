@@ -402,8 +402,8 @@
   },
   "blogs": {
     "hero": {
-      "primaryTitle": "Explore Our Blog",
-      "secondaryTitle": "Want to Know What's Moving the Industry?"
+      "primaryTitle": "Want to Know What's Moving the Industry?",
+      "secondaryTitle": "Explore Our Blog"
     },
     "details": {
       "relatedArticles": "Related Articles"

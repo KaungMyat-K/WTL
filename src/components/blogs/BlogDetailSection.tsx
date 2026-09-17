@@ -14,7 +14,7 @@ function BlogDetailSection({
 }: BlogPostProps) {
   return (
     <section className="py-12 md:py-16 lg:py-36 bg-[#e7eef1] -mt-12">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-1">
         {/* Category */}
         <div className="text-center mb-6 md:mb-8">
           <span className="inline-block bg-secondary/10 text-secondary text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full">

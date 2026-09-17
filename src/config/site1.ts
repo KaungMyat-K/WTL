@@ -15,11 +15,11 @@ const EXTERNAL_ROUTES = {
 
 const ROUTES = {
   HOME: "/",
-  SERVICE: "services",
+  SERVICE: "/services",
   SERVICE_DETAIL: (slug: string) => `/services/${slug}`,
-  JOBS: "jobs",
-  BLOGS: "news",
-  CONTACT: "contact",
+  JOBS: "/jobs",
+  BLOGS: "/news",
+  CONTACT: "/contact",
 };
 
 const NAV_LINKS: LinkItem[] = [
