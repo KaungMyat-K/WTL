@@ -6,6 +6,7 @@ import { siteConfig } from "../../config/site1";
 import { Images } from "../images";
 import type { LinkItem } from "../../types/index1";
 import type { ServiceItem } from "../../types";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const { t } = useTranslation();
@@ -47,18 +48,30 @@ function Footer() {
               </div>
 
               <div className="flex flex-row items-center gap-3 mt-2 sm:flex-col sm:items-stretch lg:flex-col lg:items-start lg:mt-0">
-                <Button
-                  variant="primary"
-                  className="flex-1 lg:flex-none lg:w-auto px-4 sm:px-5 py-2.5 text-sm"
+                <Link
+                  to={siteConfig.externalRoutes.CUSTOMER_PORTAL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  {t("button.customerPortalButton")}
-                </Button>
-                <Button
-                  variant="outline"
-                  className="flex-1 lg:flex-none lg:w-auto px-4 sm:px-5 py-2.5 text-sm"
+                  <Button
+                    variant="primary"
+                    className="flex-1 lg:flex-none lg:w-auto px-4 sm:px-5 py-2.5 text-sm"
+                  >
+                    {t("button.customerPortalButton")}
+                  </Button>
+                </Link>
+                <Link
+                  to={siteConfig.externalRoutes.EMPLOYEE_PORTAL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  {t("button.employeePortalButton")}
-                </Button>
+                  <Button
+                    variant="outline"
+                    className="flex-1 lg:flex-none lg:w-auto px-4 sm:px-5 py-2.5 text-sm"
+                  >
+                    {t("button.employeePortalButton")}
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -74,7 +87,7 @@ function Footer() {
         <div className="border-t border-white/10 mt-12 pt-8">
           <div className="flex flex-row items-center justify-center gap-4">
             <p className="text-gray-400 text-sm">
-              &copy; {currentYear} WTL Logistics
+              &copy; {currentYear} World Track Logistics
             </p>
           </div>
         </div>

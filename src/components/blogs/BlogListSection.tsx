@@ -61,7 +61,7 @@ function BlogListSection({
   const { t } = useTranslation();
 
   return (
-    <section className="py-16 sm:py-24 bg-[#e7eef1]">
+    <section className="pt-8 sm:pt-10 pb-16 sm:pb-24 md:pb-28 lg:pb-32 bg-[#e7eef1]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Blog Grid - 3 Cards Per Row */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">

@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import type { ServiceItem } from "../../types/index1";
+import Button from "../ui/Button";
 
 function HeroSection() {
   const { t } = useTranslation();
@@ -25,15 +26,27 @@ function HeroSection() {
           {t("services.hero.description")}
         </p>
 
-        <div className="max-w-xl mx-auto flex flex-wrap justify-center gap-2 sm:gap-4 pt-4 sm:pt-8">
+        <div className="max-w-3xl mx-auto flex flex-wrap justify-center gap-2 sm:gap-4 pt-4 sm:pt-8">
           {serviceItems.map((service) => (
-            <a
+            <Button
+              variant="tag"
+              rounded="full"
               key={service.id}
-              href={"#"}
-              className="px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 bg-transparent hover:bg-secondary text-gray-800 hover:text-white rounded-full text-xs sm:text-xs md:text-base lg:text-base font-medium transition-all duration-300 border border-gray-800 hover:border-secondary hover:scale-105 hover:shadow-lg"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById(
+                  `service-${service.id}`
+                );
+                if (element) {
+                  element.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }
+              }}
             >
               {service.title}
-            </a>
+            </Button>
           ))}
         </div>
       </div>

@@ -54,13 +54,19 @@ function ServiceListSection() {
         <div>
           {services.map((service, index) => {
             return (
-              <SereviceCard
+              <div
                 key={service.id}
-                href={serviceLinkMap.get(service.id)!}
-                service={service}
-                isLast={index === services.length - 1}
-                learnMoreText={t("button.learnMoreButton")}
-              />
+                id={`service-${service.id}`}
+                className="scroll-mt-24"
+              >
+                <SereviceCard
+                  key={service.id}
+                  href={serviceLinkMap.get(service.id)!}
+                  service={service}
+                  isLast={index === services.length - 1}
+                  learnMoreText={t("button.learnMoreButton")}
+                />
+              </div>
             );
           })}
         </div>

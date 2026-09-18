@@ -3,6 +3,8 @@ import Button from "../ui/Button";
 import type { HeroItem } from "../../types/index1";
 import { useTranslation } from "react-i18next";
 import { Images } from "../images";
+import { Link } from "react-router-dom";
+import { ROUTES } from "../../config/site1";
 
 function HeroSection() {
   const { t } = useTranslation();
@@ -59,7 +61,7 @@ function HeroSection() {
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
 
-              <div className="absolute inset-0 flex items-center">
+              <div className="absolute inset-0 flex items-center md:pl-10 ">
                 <div className="max-w-3xl px-4 sm:px-6 lg:px-10 pt-10">
                   <h1 className="text-6xl sm:text-7xl md:text-7xl lg:text-8xl xl:text-8xl font-bold text-secondary mb-3 sm:mb-4">
                     {t("home.hero.items.primaryTitle")} <br />
@@ -67,15 +69,18 @@ function HeroSection() {
                       {t("home.hero.items.secondaryTitle")}
                     </span>
                   </h1>
-                  <p className="text-lg sm:text-xl md:text-xl text-gray-200 mb-6 sm:mb-8">
+                  <p className="text-md sm:text-md md:text-xl text-gray-200 mb-6 sm:mb-8  md:max-w-sm lg:max-w-md ">
                     {heroContent.description}
                   </p>
                   <div>
                     <Button
                       variant="primary"
                       className=" px-5 sm:px-5 md:px-9 py-2.5 sm:py-3 md:py-3.5 text-sm sm:text-sm md:text-base lg:text-xl"
+                      asChild
                     >
-                      {t("button.contactUsButton")}
+                      <Link to={ROUTES.CONTACT}>
+                        {t("button.contactUsButton")}
+                      </Link>
                     </Button>
                   </div>
                 </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { siteConfig } from "../../config/site1";
 import { Icons } from "../icons";
 
@@ -10,16 +11,18 @@ function SocialLinks() {
           const Icon = Icons[social.id as keyof typeof Icons];
 
           return (
-            <a
+            <Link
               key={social.id}
-              href={social.href}
+              to={social.href}
               aria-label={social.label}
               className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {Icon && (
                 <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-white hover:text-secondary transition-colors duration-300" />
               )}
-            </a>
+            </Link>
           );
         })}
       </div>

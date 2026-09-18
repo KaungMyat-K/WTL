@@ -1,9 +1,10 @@
 interface DetailHeroSectionProps {
   title: string;
   img: string;
+  category: string;
 }
 
-function DetailHeroSection({ title, img }: DetailHeroSectionProps) {
+function DetailHeroSection({ title, img, category }: DetailHeroSectionProps) {
   return (
     <section className="-mt-12 pt-28 md:pt-32 lg:pt-40">
       <div>
@@ -12,20 +13,11 @@ function DetailHeroSection({ title, img }: DetailHeroSectionProps) {
             {title}
           </h1>
 
-          <nav className="flex items-center gap-2 text-xs md:text-sm lg:text-sm text-gray-400 mb-6 sm:mb-8 md:mb-10">
-            <a href="/" className="hover:text-secondary transition-colors">
-              Home
-            </a>
-            <span>›</span>
-            <a
-              href="/services"
-              className="hover:text-secondary transition-colors"
-            >
-              Services
-            </a>
+          <div className="flex items-center gap-2 text-xs md:text-sm lg:text-sm text-gray-400 mb-6 sm:mb-8 md:mb-10">
+            <span>{category}</span>
             <span>›</span>
             <span className="text-secondary">{title}</span>
-          </nav>
+          </div>
         </div>
 
         <div className="relative overflow-hidden">

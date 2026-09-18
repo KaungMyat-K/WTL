@@ -2,7 +2,7 @@
   "nav": {
     "links": {
       "home": "Home",
-      "blogs": "News",
+      "news": "Newsroom",
       "jobs": "Jobs",
       "services": "Services",
       "contact": "Contact"
@@ -19,7 +19,7 @@
         "id": "sea-freight",
         "primaryTitle": "YOUR WORLD",
         "secondaryTitle": "OUR TRACK",
-        "description": "Connecting businesses worldwide with efficient and cost-effective shipping solutions."
+        "description": "International Freight Forwarding --- from Origin to Last Mile, across Ocean and Continents with WTL Tracks."
       }
     },
     "clients": {
@@ -36,7 +36,7 @@
       "description": "Get a personalized quote tailored to your logistics needs. Choose your customer type below."
     },
     "blogs": {
-      "primaryTitle": "NEWS ROOM"
+      "primaryTitle": "NEWSROOM"
     }
   },
   "services": {
@@ -403,7 +403,7 @@
   "blogs": {
     "hero": {
       "primaryTitle": "Want to Know What's Moving the Industry?",
-      "secondaryTitle": "Explore Our Blog"
+      "secondaryTitle": "WTL Newsroom"
     },
     "details": {
       "relatedArticles": "Related Articles"

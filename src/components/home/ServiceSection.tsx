@@ -3,6 +3,8 @@ import HomeServiceCard from "../services/HomeServiceCard";
 import Button from "../ui/Button";
 import { Images } from "../images";
 import type { ServiceItem } from "../../types/index1";
+import { Link } from "react-router-dom";
+import { ROUTES } from "../../config/site1";
 
 function ServiceSection() {
   const { t } = useTranslation();
@@ -25,10 +27,6 @@ function ServiceSection() {
         };
       })
     : [];
-
-  const handleExploreClick = () => {
-    console.log("Exploring services...");
-  };
 
   return (
     <section className="py-16 sm:py-24 lg:py-32 bg-[#e7eef1] overflow-hidden">
@@ -59,10 +57,12 @@ function ServiceSection() {
         <div className="text-center mt-16 sm:mt-16 md:mt-28">
           <Button
             variant="primary"
-            onClick={handleExploreClick}
             className="min-w-35 sm:min-w-40 md:min-w-45 lg:min-w-50 px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-3.5 text-xs sm:text-sm md:text-base lg:text-lg"
+            asChild
           >
-            {t("button.exploreOurServicesButton")}
+            <Link to={ROUTES.SERVICE}>
+              {t("button.exploreOurServicesButton")}
+            </Link>
           </Button>
         </div>
       </div>

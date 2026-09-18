@@ -8,7 +8,7 @@ import { Images } from "../images";
 import { useTranslation } from "react-i18next";
 import { Icons } from "../icons";
 import type { Language, LinkItem } from "../../types/index1";
-import { siteConfig } from "../../config/site1";
+import { ROUTES, siteConfig } from "../../config/site1";
 
 function Header() {
   const { t } = useTranslation();
@@ -22,9 +22,6 @@ function Header() {
     label: t(`nav.links.${link.id}`),
   }));
 
-  const handleClick = () => {
-    window.open("", "_blank", "noopener,noreferrer");
-  };
   return (
     <>
       <nav className="sticky top-0 z-50 bg-white border-b border-white/20 shadow-md">
@@ -32,7 +29,7 @@ function Header() {
           <div className="flex justify-between items-center h-12 sm:h-14">
             <div className="flex items-center space-x-2 xs:space-x-4 sm:space-x-8 gap-1">
               <Link
-                to="/"
+                to={ROUTES.HOME}
                 className="flex-shrink-0 flex items-center bg-white mt-1"
               >
                 <img
@@ -50,12 +47,19 @@ function Header() {
                 currentLang={currentLang}
                 onSelectLanguage={setCurrentLang}
               />
+
               <Button
                 variant="primary"
-                onClick={handleClick}
                 className="hidden lg:inline-block  px-4 py-2 text-sm"
+                asChild
               >
-                {t("button.customerPortalButton")}
+                <Link
+                  to={siteConfig.externalRoutes.CUSTOMER_PORTAL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t("button.customerPortalButton")}
+                </Link>
               </Button>
 
               {/*  Hamburger Toggle */}
@@ -90,6 +94,7 @@ function Header() {
         isOpen={isMobileOpen}
         links={navLinks}
         onClose={() => setIsMobileOpen(false)}
+        btnText={t("button.customerPortalButton")}
       />
     </>
   );

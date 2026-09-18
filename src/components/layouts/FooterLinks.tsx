@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import type { LinkItem } from "../../types";
 
 interface FooterColumnProps {
@@ -12,12 +13,12 @@ function FooterLinks({ title, links }: FooterColumnProps) {
       <ul className="space-y-2.5 text-right lg:text-left lg:mt-4">
         {links.map((link) => (
           <li key={link.label}>
-            <a
-              href={link.href}
+            <Link
+              to={link.href}
               className="text-gray-400 hover:text-secondary transition-colors duration-300 text-sm inline-block"
             >
               {link.label}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

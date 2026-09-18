@@ -3,6 +3,7 @@ import { FEATURED_POSTS, RECENT_POSTS } from "../../static/blogData";
 import FeaturedPostCard from "../blogs/FeaturedPostCard";
 import RecentPostCard from "../blogs/RecentPostCard";
 import { useTranslation } from "react-i18next";
+import { ROUTES } from "../../config/site1";
 
 function LatestNewsSection() {
   const { t } = useTranslation();
@@ -18,6 +19,7 @@ function LatestNewsSection() {
           </div>
 
           <LearnMoreLink
+            href={ROUTES.NEWS}
             className="hidden lg:inline-flex"
             title={t("button.learnMoreButton")}
           />
@@ -45,6 +47,7 @@ function LatestNewsSection() {
 
         <div className="text-center mt-10 sm:mt-12 lg:hidden">
           <LearnMoreLink
+            href={ROUTES.NEWS}
             className="inline-flex"
             title={t("button.learnMoreButton")}
           />

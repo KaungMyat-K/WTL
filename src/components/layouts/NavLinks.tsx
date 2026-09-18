@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import type { LinkItem } from "../../types";
 
 interface NavLinksProps {
@@ -8,13 +9,13 @@ function NavLinks({ links }: NavLinksProps) {
   return (
     <div className="hidden lg:flex items-center space-x-6 xl:space-x-8  px-6 xl:px-6  ">
       {links.map((link) => (
-        <a
+        <Link
           key={link.label}
-          href={link.href}
+          to={link.href}
           className="text-gray-700 hover:text-secondary text-md font-medium transition-colors duration-200 pb-1 whitespace-nowrap"
         >
           {link.label}
-        </a>
+        </Link>
       ))}
     </div>
   );

@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 
 import Button from "../ui/Button";
+import { Link } from "react-router-dom";
+import { ROUTES } from "../../config/site";
 
 function CtaSection() {
   const { t } = useTranslation();
@@ -22,7 +24,7 @@ function CtaSection() {
               variant="getInTouch"
               className="w-full md:w-auto px-6 sm:px-8 py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg lg:text-xl"
             >
-              {t("button.getInTouchButton")}
+              <Link to={ROUTES.CONTACT}>{t("button.getInTouchButton")}</Link>
             </Button>
           </div>
         </div>

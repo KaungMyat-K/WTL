@@ -3,9 +3,11 @@ import ukFlagImg from "../assets/uk.png";
 import thFlagImg from "../assets/th.png";
 
 const EXTERNAL_ROUTES = {
-  CUSTOMER_PORTAL: "https://www.facebook.com",
-  NEW_CUSTOMER_QUOTE: "https://www.facebook.com",
-  EXISTING_CUSTOMER_QUOTE: "https://www.facebook.com",
+  CUSTOMER_PORTAL: "",
+  EMPLOYEE_PORTAL: "https://fms.yunwuyun.com/#/login?tenantCode=",
+  NEW_CUSTOMER: "",
+  EXISTING_CUSTOMER:
+    "https://fms.yunwuyun.com/routes-ywy.html?tenantCode=SDyvKQ92Ud63fbpRFJ1L2g%3D%3D/",
   FACEBOOK: "",
   INSTAGRAM: "",
   LINKEDIN: "",
@@ -13,12 +15,12 @@ const EXTERNAL_ROUTES = {
   LINE: "",
 };
 
-const ROUTES = {
+export const ROUTES = {
   HOME: "/",
   SERVICE: "/services",
   SERVICE_DETAIL: (slug: string) => `/services/${slug}`,
   JOBS: "/jobs",
-  BLOGS: "/news",
+  NEWS: "/news",
   CONTACT: "/contact",
 };
 
@@ -26,7 +28,7 @@ const NAV_LINKS: LinkItem[] = [
   { id: "home", label: "", href: ROUTES.HOME },
   { id: "services", label: "", href: ROUTES.SERVICE },
   { id: "jobs", label: "", href: ROUTES.JOBS },
-  { id: "blogs", label: "", href: ROUTES.BLOGS },
+  { id: "news", label: "", href: ROUTES.NEWS },
   { id: "contact", label: "", href: ROUTES.CONTACT },
 ];
 

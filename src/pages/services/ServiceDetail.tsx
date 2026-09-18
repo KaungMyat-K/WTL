@@ -27,7 +27,11 @@ function ServiceDetail() {
 
   return (
     <>
-      <DetailHeroSection title={currentService.title} img={img?.src || ""} />
+      <DetailHeroSection
+        title={currentService.title}
+        img={img?.src || ""}
+        category={t("nav.links.services")}
+      />
       <OverViewSection
         title={currentService.details.overview.title}
         content={currentService.details.overview.content}
