@@ -1,13 +1,22 @@
+import { Link } from "react-router-dom";
 import type { ServiceItem } from "../../types/index1";
 import { Icons } from "../icons";
+import { ROUTES, siteConfig } from "../../config/site1";
 
 interface ServiceCardProps {
   service: ServiceItem;
 }
 
 function HomeServiceCard({ service }: ServiceCardProps) {
+  const serviceLink =
+    siteConfig.serviceLinks.find((link) => link.id === service.id)?.href ||
+    ROUTES.SERVICE;
+
   return (
-    <div className="group relative bg-white rounded-md transition-all duration-300 overflow-hidden flex flex-col cursor-pointer hover:bg-secondary sm:hover:-translate-y-2 lg:hover:-translate-y-3 xl:hover:-translate-y-4">
+    <Link
+      to={serviceLink}
+      className="group relative bg-white rounded-md transition-all duration-300 overflow-hidden flex flex-col cursor-pointer hover:bg-secondary sm:hover:-translate-y-2 lg:hover:-translate-y-3 xl:hover:-translate-y-4"
+    >
       <div className="absolute inset-0 bg-secondary transform -translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out" />
 
       <div className="p-4 sm:p-5 md:p-6 flex-1 flex flex-col relative z-10">
@@ -27,17 +36,14 @@ function HomeServiceCard({ service }: ServiceCardProps) {
           {service.shortDescription}
         </p>
 
-        <a
-          href="#"
-          className="inline-flex items-center text-gray-800 text-sm sm:text-base transition-all duration-200 group-hover:text-white group-hover:gap-2 mt-auto"
-        >
+        <span className="inline-flex items-center text-gray-800 text-sm sm:text-base transition-all duration-200 group-hover:text-white group-hover:gap-2 mt-auto">
           <Icons.rightArrow
             strokeWidth="1.2"
             className="h-5 w-5 sm:h-5 sm:w-5 md:h-6 md:w-6 transition-all duration-75 ease-in-out group-hover:translate-x-3 group-hover:text-white"
           />
-        </a>
+        </span>
       </div>
-    </div>
+    </Link>
   );
 }
 
