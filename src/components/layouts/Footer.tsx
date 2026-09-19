@@ -80,7 +80,7 @@ function Footer() {
 
           <FooterLinks title={t("nav.footer.services")} links={serviceLinks} />
 
-          <SocialLinks />
+          <SocialLinks title={t("nav.footer.followUs")} />
         </div>
 
         {/* Bottom Bar */}

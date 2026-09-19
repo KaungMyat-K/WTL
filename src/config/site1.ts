@@ -17,18 +17,20 @@ const EXTERNAL_ROUTES = {
 
 export const ROUTES = {
   HOME: "/",
-  SERVICE: "/services",
+  SERVICES: "/services",
   SERVICE_DETAIL: (slug: string) => `/services/${slug}`,
   JOBS: "/jobs",
   NEWS: "/news",
   CONTACT: "/contact",
+  OFFICES: "/offices",
 };
 
 const NAV_LINKS: LinkItem[] = [
   { id: "home", label: "", href: ROUTES.HOME },
-  { id: "services", label: "", href: ROUTES.SERVICE },
+  { id: "services", label: "", href: ROUTES.SERVICES },
   { id: "jobs", label: "", href: ROUTES.JOBS },
   { id: "news", label: "", href: ROUTES.NEWS },
+  { id: "offices", label: "", href: ROUTES.OFFICES },
   { id: "contact", label: "", href: ROUTES.CONTACT },
 ];
 

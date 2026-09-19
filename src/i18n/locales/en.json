@@ -5,12 +5,14 @@
       "news": "Newsroom",
       "jobs": "Jobs",
       "services": "Services",
-      "contact": "Contact"
+      "contact": "Contact",
+      "offices": "Offices"
     },
     "footer": {
-      "description": "We provide end-to-end logistics services to meet all your shipping and supply chain needs worldwide.",
+      "description": "International freight forwarding ---- from origin to last mile, across ocean with our track.",
       "company": "Company",
-      "services": "Services"
+      "services": "Services",
+      "followUs": "Follow Us"
     }
   },
   "home": {
@@ -32,7 +34,7 @@
       "ourServiceButton": "Explore Our Services"
     },
     "getAQuote": {
-      "primaryTitle": "GET A QUOTE TAILORED TO YOUR NEEDS",
+      "primaryTitle": "GET A QUOTE OR TRACK FOR YOUR SHIPMENTS",
       "description": "Get a personalized quote tailored to your logistics needs. Choose your customer type below."
     },
     "blogs": {
@@ -43,7 +45,7 @@
     "hero": {
       "primaryTitle": "Seamless Shipping Solutions",
       "secondaryTitle": "for Global Logistics",
-      "description": "We provide end-to-end logistics services to meet all your shipping and supply chain needs. From sea and air freight to road and rail transportation."
+      "description": "Since our journey began in Shenzhen in 2009, WTL has expanded its presence across Shanghai, Zhongshan, and Thailand, building strong global connectivity through trusted airline, carrier, and logistics partnerships."
     },
     "servicesList": {
       "primaryTitle": "What We",

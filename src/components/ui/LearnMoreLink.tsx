@@ -3,7 +3,7 @@ import { Icons } from "../icons";
 
 interface LearnMoreLinkProps {
   className?: string;
-  href?: string;
+  href: string;
   title: string;
 }
 
