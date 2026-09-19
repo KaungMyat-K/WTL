@@ -60,7 +60,7 @@ function ServiceSection() {
             className="min-w-35 sm:min-w-40 md:min-w-45 lg:min-w-50 px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-3.5 text-xs sm:text-sm md:text-base lg:text-lg"
             asChild
           >
-            <Link to={ROUTES.SERVICE}>
+            <Link to={ROUTES.SERVICES}>
               {t("button.exploreOurServicesButton")}
             </Link>
           </Button>

@@ -10,7 +10,7 @@ interface ServiceCardProps {
 function HomeServiceCard({ service }: ServiceCardProps) {
   const serviceLink =
     siteConfig.serviceLinks.find((link) => link.id === service.id)?.href ||
-    ROUTES.SERVICE;
+    ROUTES.SERVICES;
 
   return (
     <Link
