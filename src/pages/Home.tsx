@@ -4,12 +4,14 @@ import ServiceSection from "../components/home/ServiceSection";
 import LatestNewsSection from "../components/home/LatestNewsSection";
 import CtaSection from "../components/contact/CtaSection";
 import QuoteSection from "../components/home/QuoteSection";
+import CompanyDescriptionSection from "../components/home/CompanyDescriptionSection";
 
 function Home() {
   return (
     <>
       <HeroSection />
       <ClientMarquee />
+      <CompanyDescriptionSection />
       <ServiceSection />
       <QuoteSection />
       <LatestNewsSection />

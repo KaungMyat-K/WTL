@@ -44,14 +44,14 @@ export const Images = {
         alt: "Cargo airplane flying",
       },
       {
-        id: "warehousing-&-trucking",
-        src: warehousingIcon,
-        alt: "Cargo airplane flying",
-      },
-      {
         id: "land-freight",
         src: roadIcon,
         alt: "Modern warehouse logistics",
+      },
+      {
+        id: "warehousing-&-trucking",
+        src: warehousingIcon,
+        alt: "Cargo airplane flying",
       },
     ],
     img: [

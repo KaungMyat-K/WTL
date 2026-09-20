@@ -28,9 +28,9 @@ export const ROUTES = {
 const NAV_LINKS: LinkItem[] = [
   { id: "home", label: "", href: ROUTES.HOME },
   { id: "services", label: "", href: ROUTES.SERVICES },
+  { id: "offices", label: "", href: ROUTES.OFFICES },
   { id: "jobs", label: "", href: ROUTES.JOBS },
   { id: "news", label: "", href: ROUTES.NEWS },
-  { id: "offices", label: "", href: ROUTES.OFFICES },
   { id: "contact", label: "", href: ROUTES.CONTACT },
 ];
 
@@ -62,14 +62,14 @@ const SERVICE_LINKS: LinkItem[] = [
     href: ROUTES.SERVICE_DETAIL("sea-freight"),
   },
   {
-    id: "land-freight",
-    label: "",
-    href: ROUTES.SERVICE_DETAIL("land-freight"),
-  },
-  {
     id: "air-freight",
     label: "",
     href: ROUTES.SERVICE_DETAIL("air-freight"),
+  },
+  {
+    id: "land-freight",
+    label: "",
+    href: ROUTES.SERVICE_DETAIL("land-freight"),
   },
   {
     id: "warehousing-&-trucking",

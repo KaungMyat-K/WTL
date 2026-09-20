@@ -9,7 +9,7 @@ function QuoteSection() {
   return (
     <section className="overflow-hidden pt-16 sm:pt-24 lg:pt-32 pb-12 sm:pb-16 lg:pb-20">
       <div className="z-10 max-w-7xl mx-auto rounded-md px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-20 text-center bg-gray-900 w-[calc(100%-2rem)] sm:w-[calc(100%-3rem)]">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 md:mb-8">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-10 sm:mb-16 md:mb-20">
           {t("home.getAQuote.primaryTitle")}
         </h2>
 

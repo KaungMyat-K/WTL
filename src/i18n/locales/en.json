@@ -5,7 +5,7 @@
       "news": "Newsroom",
       "jobs": "Jobs",
       "services": "Services",
-      "contact": "Contact",
+      "contact": "Contact Us",
       "offices": "Offices"
     },
     "footer": {
@@ -21,8 +21,13 @@
         "id": "sea-freight",
         "primaryTitle": "YOUR WORLD",
         "secondaryTitle": "OUR TRACK",
-        "description": "International Freight Forwarding --- from Origin to Last Mile, across Ocean and Continents with WTL Tracks."
+        "description": "International freight forwarding ---- from origin to last mile, across ocean with our track."
       }
+    },
+    "companyDescription": {
+      "primaryTitle": "EMPOWERING GLOBAL TRADE",
+      "secondaryTitle": "THROUGH FRICTIONLESS LOGISTICS",
+      "description": "WTL Group founded in 2009, as World Track Logistics / WTL International Logistics Co., Ltd which is a professional freight forwarding and global logistics service provider. We specialize in international air freight, sea freight, customs clearance, inland trucking, and warehouse solutions. With a strong global network and experienced local teams, we support customers in managing shipments efficiently, reducing lead times, and optimizing logistics performance.We are committed to accuracy, transparency, and long-term partnership."
     },
     "clients": {
       "title": "WTL Networks & Associations"
@@ -35,7 +40,7 @@
     },
     "getAQuote": {
       "primaryTitle": "GET A QUOTE OR TRACK FOR YOUR SHIPMENTS",
-      "description": "Get a personalized quote tailored to your logistics needs. Choose your customer type below."
+      "description": ""
     },
     "blogs": {
       "primaryTitle": "NEWSROOM"
@@ -101,18 +106,18 @@
           }
         },
         {
-          "id": "land-freight",
-          "title": "Land Freight",
+          "id": "air-freight",
+          "title": "Air Freight",
           "description": "",
-          "shortDescription": "Fast and flexible land transportation solutions for domestic and cross-border shipping needs.",
+          "shortDescription": "RTime-sensitive air cargo solutions with priority handling and global network coverage.",
           "details": {
             "overview": {
-              "title": "Land Freight",
+              "title": "Air Freight",
               "content": "Our air freight services offer fast, reliable, and cost-effective solutions for time-sensitive shipments. With a global network and priority handling, we ensure your cargo reaches its destination on time, every time. Whether you need express delivery or scheduled air cargo, our team of experts is dedicated to providing seamless logistics solutions tailored to your specific requirements."
             },
             "keyFeatures": {
               "primaryTitle": "KEY FEATURES",
-              "secondaryTitle": "OF LAND FREIGHT SERVICE",
+              "secondaryTitle": "OF AIR FREIGHT SERVICE",
               "features": [
                 {
                   "id": "fastDelivery",
@@ -149,18 +154,18 @@
           }
         },
         {
-          "id": "air-freight",
-          "title": "Air Freight",
+          "id": "land-freight",
+          "title": "Land Freight",
           "description": "",
-          "shortDescription": "RTime-sensitive air cargo solutions with priority handling and global network coverage.",
+          "shortDescription": "Fast and flexible land transportation solutions for domestic and cross-border shipping needs.",
           "details": {
             "overview": {
-              "title": "Air Freight",
+              "title": "Land Freight",
               "content": "Our air freight services offer fast, reliable, and cost-effective solutions for time-sensitive shipments. With a global network and priority handling, we ensure your cargo reaches its destination on time, every time. Whether you need express delivery or scheduled air cargo, our team of experts is dedicated to providing seamless logistics solutions tailored to your specific requirements."
             },
             "keyFeatures": {
               "primaryTitle": "KEY FEATURES",
-              "secondaryTitle": "OF AIR FREIGHT SERVICE",
+              "secondaryTitle": "OF LAND FREIGHT SERVICE",
               "features": [
                 {
                   "id": "fastDelivery",
@@ -431,6 +436,10 @@
     },
     "CTA": {
       "primaryTitle": "Ready to Move Your Business Forward? Get in touch."
+    },
+    "slogan": {
+      "primaryTitle": "YOUR WORLD",
+      "secondaryTitle": "OUR TRACK"
     }
   },
   "button": {

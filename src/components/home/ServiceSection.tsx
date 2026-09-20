@@ -42,7 +42,7 @@ function ServiceSection() {
           </div>
 
           <div className="lg:w-7/12 w-full">
-            <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed text-center lg:text-left">
+            <p className="text-gray-600 text-sm sm:text-base md:text-lg  text-center lg:text-left">
               {t("home.services.description")}
             </p>
           </div>
