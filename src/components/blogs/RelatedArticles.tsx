@@ -23,8 +23,8 @@ function RelatedArticles({ news }: RelatedArticlesProps) {
 
         {/* Related Articles Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 lg:gap-6">
-          {news.map((post, index) => (
-            <BlogCard key={post.id ?? post.name ?? index} post={post} />
+          {news.map((post) => (
+            <BlogCard key={post.bid} post={post} />
           ))}
         </div>
       </div>

@@ -23,7 +23,7 @@ function BlogDetailSection({ post }: BlogDetailsProps) {
         {/* Category */}
         <div className="text-center mb-6 md:mb-8">
           <span className="inline-block bg-secondary/10 text-secondary text-xs sm:text-sm   px-3 py-1 rounded-md">
-            {post.category.name}
+            {post?.category?.name}
           </span>
         </div>
 

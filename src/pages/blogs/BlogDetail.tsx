@@ -15,7 +15,7 @@ function BlogDetail() {
     data: post,
     isPending,
     isError,
-  } = useQuery(fetchOneNewsQuery(blogId));
+  } = useQuery(fetchOneNewsQuery(blogId!));
 
   if (isPending) {
     return (
