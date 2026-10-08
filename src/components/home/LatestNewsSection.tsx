@@ -1,12 +1,18 @@
 import LearnMoreLink from "../ui/LearnMoreLink";
-import { FEATURED_POSTS, RECENT_POSTS } from "../../static/blogData";
-import FeaturedPostCard from "../blogs/FeaturedPostCard";
 import RecentPostCard from "../blogs/RecentPostCard";
 import { useTranslation } from "react-i18next";
 import { ROUTES } from "../../config/site1";
+import type { NewsData } from "../../types/index1";
+import BlogCard from "../blogs/BlogCard";
 
-function LatestNewsSection() {
+interface LatestNewsProps {
+  news: NewsData[];
+}
+
+function LatestNewsSection({ news }: LatestNewsProps) {
   const { t } = useTranslation();
+  const featuredNews = news.slice(0, 2);
+  const recentNews = news.slice(2, 5);
 
   return (
     <section className="py-16 sm:py-24 lg:py-32">
@@ -28,18 +34,18 @@ function LatestNewsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div className="lg:col-span-2">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-              {FEATURED_POSTS.map((post) => (
-                <FeaturedPostCard key={post.id} post={post} />
+              {featuredNews.map((post) => (
+                <BlogCard key={post.bid} post={post} />
               ))}
             </div>
           </div>
 
           <div className="space-y-4 sm:space-y-5 lg:space-y-6">
-            {RECENT_POSTS.map((post, index) => (
+            {recentNews.map((post, index) => (
               <RecentPostCard
-                key={post.id}
+                key={post.bid}
                 post={post}
-                isLast={index === RECENT_POSTS.length - 1}
+                isLast={index === recentNews.length - 1}
               />
             ))}
           </div>

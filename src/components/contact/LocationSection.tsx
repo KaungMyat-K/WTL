@@ -17,7 +17,7 @@ function LocationSection() {
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/80 to-transparent" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-24  lg:py-40  xl:py-24">
         <div className="max-w-3xl relative">
           <div className="absolute inset-0 -mx-4 sm:mx-0 sm:hidden">
             <img

@@ -23,6 +23,7 @@ function CtaSection() {
             <Button
               variant="getInTouch"
               className="w-full md:w-auto px-6 sm:px-8 py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg lg:text-xl"
+              asChild
             >
               <Link to={ROUTES.CONTACT}>{t("button.getInTouchButton")}</Link>
             </Button>

@@ -24,24 +24,25 @@ function QuoteSection() {
             asChild
           >
             <Link
-              to={siteConfig.externalRoutes.NEW_CUSTOMER}
+              to={siteConfig.externalRoutes.NEW_INQUIRY}
               target="_blank"
               rel="noopener noreferrer"
             >
-              {t("button.newCustomerButton")}
+              {t("button.newInquiryButton")}
             </Link>
           </Button>
 
           <Button
             variant="glass"
-            className="min-w-[140px] sm:min-w-[160px] md:min-w-[180px] lg:min-w-[200px] px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-3.5 text-xs sm:text-sm md:text-base lg:text-lg"
+            className="min-w-[140px] sm:min-w-[160px] md:min-w-[180px] lg:min-w-[200px] px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-3.5 text-xs sm:text-sm md:text-base lg:text-lg uppercase"
+            asChild
           >
             <Link
-              to={siteConfig.externalRoutes.EXISTING_CUSTOMER}
+              to={siteConfig.externalRoutes.SHIPMENT_TACKING}
               target="_blank"
               rel="noopener noreferrer"
             >
-              {t("button.existingCustomerButton")}
+              {t("button.shipmentTrackingButton")}
             </Link>
           </Button>
         </div>

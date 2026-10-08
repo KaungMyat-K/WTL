@@ -61,11 +61,11 @@
           "id": "sea-freight",
           "title": "Sea Freight",
           "description": "",
-          "shortDescription": "Reliable and cost-effective ocean freight services for international shipping with global coverage.",
+          "shortDescription": "Reliable ocean solutions for global trade",
           "details": {
             "overview": {
-              "title": "Sea Freight",
-              "content": "Our air freight services offer fast, reliable, and cost-effective solutions for time-sensitive shipments. With a global network and priority handling, we ensure your cargo reaches its destination on time, every time. Whether you need express delivery or scheduled air cargo, our team of experts is dedicated to providing seamless logistics solutions tailored to your specific requirements."
+              "title": "Overview",
+              "content": "Flexible and cost effective ocean freight solutions connecting ports and markets worldwide.\nLCL  For smaller shipments that do not require a full container, with consolidation, flexible schedules and coordinated cargo handling.\nFCL  Dedicated container solutions for larger shipments, with options for equipment, routing and shipping schedules."
             },
             "keyFeatures": {
               "primaryTitle": "KEY FEATURES",
@@ -109,11 +109,11 @@
           "id": "air-freight",
           "title": "Air Freight",
           "description": "",
-          "shortDescription": "RTime-sensitive air cargo solutions with priority handling and global network coverage.",
+          "shortDescription": "Speed when every moment matters",
           "details": {
             "overview": {
-              "title": "Air Freight",
-              "content": "Our air freight services offer fast, reliable, and cost-effective solutions for time-sensitive shipments. With a global network and priority handling, we ensure your cargo reaches its destination on time, every time. Whether you need express delivery or scheduled air cargo, our team of experts is dedicated to providing seamless logistics solutions tailored to your specific requirements."
+              "title": "Overview",
+              "content": "Fast and flexible air freight solutions for time sensitive and high value cargo. Through our airline and international partner network, we coordinate suitable routing and shipment handling from origin pickup to final delivery."
             },
             "keyFeatures": {
               "primaryTitle": "KEY FEATURES",
@@ -157,11 +157,11 @@
           "id": "land-freight",
           "title": "Land Freight",
           "description": "",
-          "shortDescription": "Fast and flexible land transportation solutions for domestic and cross-border shipping needs.",
+          "shortDescription": "Connecting borders and businesses",
           "details": {
             "overview": {
-              "title": "Land Freight",
-              "content": "Our air freight services offer fast, reliable, and cost-effective solutions for time-sensitive shipments. With a global network and priority handling, we ensure your cargo reaches its destination on time, every time. Whether you need express delivery or scheduled air cargo, our team of experts is dedicated to providing seamless logistics solutions tailored to your specific requirements."
+              "title": "Overview",
+              "content": "Trucking and cross border transportation connecting key markets throughout Southeast Asia. WTL Group coordinates inland movement and border procedures between factories, warehouses, ports, airports and final destinations."
             },
             "keyFeatures": {
               "primaryTitle": "KEY FEATURES",
@@ -205,11 +205,11 @@
           "id": "warehousing-&-trucking",
           "title": "Warehousing & Trucking",
           "description": "",
-          "shortDescription": "Sustainable and cost-efficient rail transportation for bulk and container shipments.",
+          "shortDescription": "Storage connected to your supply chain",
           "details": {
             "overview": {
-              "title": "Warehousing & Trucking",
-              "content": "Our air freight services offer fast, reliable, and cost-effective solutions for time-sensitive shipments. With a global network and priority handling, we ensure your cargo reaches its destination on time, every time. Whether you need express delivery or scheduled air cargo, our team of experts is dedicated to providing seamless logistics solutions tailored to your specific requirements."
+              "title": "Overview",
+              "content": "From short term storage to consolidation and distribution, WTL Group coordinates warehouse services to keep cargo organized and ready for its next movement."
             },
             "keyFeatures": {
               "primaryTitle": "KEY FEATURES",
@@ -253,11 +253,11 @@
           "id": "local-customs-clearance",
           "title": "Local Customs Clearance",
           "description": "",
-          "shortDescription": "Dedicated container shipping for large volumes with exclusive use and maximum security for your cargo.",
+          "shortDescription": "Supporting smooth cargo clearance",
           "details": {
             "overview": {
-              "title": "Local Customs Clearance",
-              "content": "Our air freight services offer fast, reliable, and cost-effective solutions for time-sensitive shipments. With a global network and priority handling, we ensure your cargo reaches its destination on time, every time. Whether you need express delivery or scheduled air cargo, our team of experts is dedicated to providing seamless logistics solutions tailored to your specific requirements."
+              "title": "Overview",
+              "content": "Our local teams coordinate import and export documentation, declarations and applicable regulatory requirements with customers and relevant authorities to help keep shipments moving."
             },
             "keyFeatures": {
               "primaryTitle": "KEY FEATURES",
@@ -301,11 +301,11 @@
           "id": "special-project-cargo",
           "title": "Special Project Cargo",
           "description": "",
-          "shortDescription": "Cost-effective consolidation services for smaller shipments sharing container space with flexible shipping options.",
+          "shortDescription": "Solutions for cargo beyond standard dimensions",
           "details": {
             "overview": {
-              "title": "Special Project Cargo",
-              "content": "Our air freight services offer fast, reliable, and cost-effective solutions for time-sensitive shipments. With a global network and priority handling, we ensure your cargo reaches its destination on time, every time. Whether you need express delivery or scheduled air cargo, our team of experts is dedicated to providing seamless logistics solutions tailored to your specific requirements."
+              "title": "Overview",
+              "content": "Oversized, heavy, sensitive and complex cargo requires careful planning. WTL Group coordinates routing, equipment, handling, customs and transportation requirements from initial planning through delivery."
             },
             "keyFeatures": {
               "primaryTitle": "KEY FEATURES",
@@ -349,11 +349,11 @@
           "id": "combined-logistics",
           "title": "Combined Logistics",
           "description": "",
-          "shortDescription": "Cost-effective consolidation services for smaller shipments sharing container space with flexible shipping options.",
+          "shortDescription": "Air sea and land in one coordinated solution",
           "details": {
             "overview": {
-              "title": "Combined Logistics",
-              "content": "Our air freight services offer fast, reliable, and cost-effective solutions for time-sensitive shipments. With a global network and priority handling, we ensure your cargo reaches its destination on time, every time. Whether you need express delivery or scheduled air cargo, our team of experts is dedicated to providing seamless logistics solutions tailored to your specific requirements."
+              "title": "Overview",
+              "content": "When a shipment needs more than one transport mode, WTL Group combines air, sea and land services. We assess routing, transit time and cost to develop a suitable multimodal transport plan."
             },
             "keyFeatures": {
               "primaryTitle": "KEY FEATURES",
@@ -446,12 +446,11 @@
     "exploreOurServicesButton": "Explore Our Services",
     "contactUsButton": "Contact Us",
     "learnMoreButton": "Learn More",
-    "newCustomerButton": "NEW CUSTOMER",
-    "existingCustomerButton": "EXISTING CUSTOMER",
+    "newInquiryButton": "NEW INQUIRY",
+    "shipmentTrackingButton": "Shipment Tracking",
     "applyButton": "Apply Now",
     "sendButton": "Send",
     "getInTouchButton": "Get in Touch",
-    "customerPortalButton": "Customer Portal",
     "employeePortalButton": "Employee Portal"
   }
 }

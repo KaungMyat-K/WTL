@@ -11,7 +11,7 @@ function OverViewSection({ title, content }: OverViewProps) {
           {title}
         </h2>
 
-        <p className="text-gray-600 max-w-3xl text-sm sm:text-base md:text-lg">
+        <p className="text-gray-600 max-w-3xl text-sm sm:text-base md:text-lg whitespace-pre-line">
           {content}
         </p>
       </div>

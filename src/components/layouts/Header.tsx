@@ -7,15 +7,15 @@ import { Link } from "react-router-dom";
 import { Images } from "../images";
 import { useTranslation } from "react-i18next";
 import { Icons } from "../icons";
-import type { Language, LinkItem } from "../../types/index1";
+import type { LinkItem } from "../../types/index1";
 import { ROUTES, siteConfig } from "../../config/site1";
 
 function Header() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isMobileOpen, setIsMobileOpen] = useState<boolean>(false);
-  const [currentLang, setCurrentLang] = useState<Language>(
-    siteConfig.language[0]
-  );
+  const currentLang =
+    siteConfig.language.find((l) => l.id === i18n.language) ??
+    siteConfig.language[0];
 
   const navLinks: LinkItem[] = siteConfig.navLinks.map((link) => ({
     ...link,
@@ -45,7 +45,7 @@ function Header() {
               <LanguageDropdown
                 languages={siteConfig.language}
                 currentLang={currentLang}
-                onSelectLanguage={setCurrentLang}
+                onSelectLanguage={(lang) => i18n.changeLanguage(lang.id)}
               />
 
               <Button
@@ -54,11 +54,11 @@ function Header() {
                 asChild
               >
                 <Link
-                  to={siteConfig.externalRoutes.CUSTOMER_PORTAL}
+                  to={siteConfig.externalRoutes.SHIPMENT_TACKING}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {t("button.customerPortalButton")}
+                  {t("button.shipmentTrackingButton")}
                 </Link>
               </Button>
 
@@ -94,7 +94,7 @@ function Header() {
         isOpen={isMobileOpen}
         links={navLinks}
         onClose={() => setIsMobileOpen(false)}
-        btnText={t("button.customerPortalButton")}
+        btnText={t("button.shipmentTrackingButton")}
       />
     </>
   );

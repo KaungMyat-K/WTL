@@ -62,7 +62,7 @@ const Button = ({
     ghost:
       "text-gray-600 hover:text-secondary hover:bg-secondary/10 transition-all duration-300 hover:scale-105",
     outline:
-      "border-2 border-white text-white transition-all duration-300 hover:scale-105 focus:ring-secondary/50",
+      "border-1 border-white text-white transition-all duration-300 hover:scale-105 focus:ring-secondary/50",
     darkOutline:
       "border border-gray-900 text-gray-900 hover:border-secondary hover:bg-secondary hover:text-white transition-all duration-300 focus:ring-secondary/50",
     glass:

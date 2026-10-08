@@ -3,16 +3,18 @@ import ukFlagImg from "../assets/uk.png";
 import thFlagImg from "../assets/th.png";
 
 const EXTERNAL_ROUTES = {
+  SHIPMENT_TACKING:
+    "https://fms.yunwuyun.com/routes-ywy.html?tenantCode=SDyvKQ92Ud63fbpRFJ1L2g%3D%3D/",
   CUSTOMER_PORTAL: "",
   EMPLOYEE_PORTAL: "https://fms.yunwuyun.com/#/login?tenantCode=",
-  NEW_CUSTOMER: "",
+  NEW_INQUIRY: "",
   EXISTING_CUSTOMER:
     "https://fms.yunwuyun.com/routes-ywy.html?tenantCode=SDyvKQ92Ud63fbpRFJ1L2g%3D%3D/",
-  FACEBOOK: "",
-  INSTAGRAM: "",
-  LINKEDIN: "",
-  YOUTUBE: "",
-  LINE: "",
+  FACEBOOK: "https://www.facebook.com/share/19TJyGWPeX/",
+  INSTAGRAM: "https://www.instagram.com/wtl.int.logistics",
+  LINKEDIN: "https://www.linkedin.com/company/wtl-group",
+  YOUTUBE: "https://youtu.be/fpiZYQkVVl8?utm_source=chatgpt.com",
+  LINE: "https://line.me/R/ti/p/@wtl-group",
 };
 
 export const ROUTES = {

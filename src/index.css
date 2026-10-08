@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme {
   --color-primary: #ffffff;
@@ -7,7 +8,7 @@
   --font-oswald: "Oswald", sans-serif;
 }
 
-@keyframes marquee-scroll {
+/* @keyframes marquee-scroll {
   0% {
     transform: translateX(0);
   }
@@ -24,4 +25,4 @@
 
 .animate-marquee:hover {
   animation-play-state: paused;
-}
+} */

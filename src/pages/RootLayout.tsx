@@ -5,7 +5,7 @@ import ScrollToTop from "../components/layouts/ScrollToTop";
 
 function RootLayout() {
   return (
-    <div className="font-oswald  antialiased">
+    <div className="font-oswald  antialiased ">
       <ScrollToTop />
       <Header />
       <Outlet />

@@ -45,7 +45,7 @@ function MobileMenu({ isOpen, links, onClose, btnText }: MobileMenuProps) {
           asChild
         >
           <Link
-            to={siteConfig.externalRoutes.CUSTOMER_PORTAL}
+            to={siteConfig.externalRoutes.SHIPMENT_TACKING}
             target="_blank"
             rel="noopener noreferrer"
           >

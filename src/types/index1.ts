@@ -75,3 +75,58 @@ export interface Location {
   taxId?: string;
   contacts: ContactPerson[];
 }
+
+//API
+
+export interface NewsNames {
+  th?: string;
+  en?: string;
+}
+
+export interface NewsData {
+  bid: string;
+  names: NewsNames;
+  createdDate: string;
+  image: string;
+}
+export interface NewsListApiResponse {
+  content: NewsData[];
+  page: {
+    size: number;
+    number: number;
+    totalElements: number;
+    totalPages: number;
+  };
+}
+
+interface NewsCategory {
+  id: number;
+  name: string;
+}
+
+export interface NewsTranslation {
+  name: string;
+  content: string;
+}
+
+export interface NewsTranslations {
+  th?: NewsTranslation;
+  en?: NewsTranslation;
+}
+
+export interface NewsDetailData {
+  bid: string;
+  translations: NewsTranslations;
+  category?: NewsCategory;
+  image?: string;
+  createdDate: string;
+  updatedDate: string;
+  fbRef?: string | null;
+  linkedinRef?: string | null;
+  relatedBlogs: NewsData[];
+}
+
+export interface NetworkData {
+  name: string;
+  imageUrl: string;
+}

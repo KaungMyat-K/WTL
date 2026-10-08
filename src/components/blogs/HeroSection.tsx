@@ -4,7 +4,7 @@ function HeroSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative bg-[#e7eef1] -mt-12 pt-12">
+    <section className="relative bg-[#e7eef1] -mt-12 pt-12 md:pt-18 lg:pt-32 xl:pt-12">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24 text-center">
         <span className="inline-block text-gray-800 text-md sm:text-md md:text-xl font-semibold mb-4 sm:mb-5 md:mb-6">
           {t("blogs.hero.primaryTitle")}

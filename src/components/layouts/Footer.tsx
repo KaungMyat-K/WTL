@@ -49,25 +49,28 @@ function Footer() {
 
               <div className="flex flex-row items-center gap-3 mt-2 sm:flex-col sm:items-stretch lg:flex-col lg:items-start lg:mt-0">
                 <Link
-                  to={siteConfig.externalRoutes.CUSTOMER_PORTAL}
+                  to={siteConfig.externalRoutes.SHIPMENT_TACKING}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="w-full sm:w-auto"
                 >
                   <Button
                     variant="primary"
-                    className="flex-1 lg:flex-none lg:w-auto px-4 sm:px-5 py-2.5 text-sm"
+                    className="w-full  md:w-[130px] lg:w-[130px] px-4 sm:px-5 py-2.5 text-sm"
                   >
-                    {t("button.customerPortalButton")}
+                    {t("button.shipmentTrackingButton")}
                   </Button>
                 </Link>
+
                 <Link
                   to={siteConfig.externalRoutes.EMPLOYEE_PORTAL}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="w-full sm:w-auto"
                 >
                   <Button
                     variant="outline"
-                    className="flex-1 lg:flex-none lg:w-auto px-4 sm:px-5 py-2.5 text-sm"
+                    className="w-full  md:w-[130px]  lg:w-[130px] px-4 sm:px-5 py-2.5 text-sm"
                   >
                     {t("button.employeePortalButton")}
                   </Button>
@@ -87,7 +90,7 @@ function Footer() {
         <div className="border-t border-white/10 mt-12 pt-8">
           <div className="flex flex-row items-center justify-center gap-4">
             <p className="text-gray-400 text-sm">
-              &copy; {currentYear} World Track Logistics
+              &copy; {currentYear} World Track Logistics (WTL Group)
             </p>
           </div>
         </div>

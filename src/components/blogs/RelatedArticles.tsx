@@ -1,42 +1,12 @@
-import type { BlogPost } from "../../types";
+import type { NewsData } from "../../types/index1";
 import BlogCard from "./BlogCard";
-import seaFreightImg from "../../assets/home/air-pic.jpg";
 import { useTranslation } from "react-i18next";
 
 interface RelatedArticlesProps {
-  articles?: BlogPost[];
-  title?: string;
+  news: NewsData[];
 }
 
-const BLOG_POSTS: BlogPost[] = [
-  {
-    id: 1,
-    title: "The Future of Global Shipping in 2024",
-    date: "Mar 15, 2024",
-    imageUrl: seaFreightImg,
-    href: "/blogs/1",
-  },
-  {
-    id: 2,
-    title: "Air Freight: Speed Meets Reliability",
-    date: "Mar 12, 2024",
-    imageUrl: seaFreightImg,
-    href: "/blogs/1",
-  },
-  {
-    id: 3,
-    title: "Smart Warehousing Solutions for 2024",
-    date: "Mar 10, 2024",
-    imageUrl: seaFreightImg,
-    href: "/blogs/1",
-  },
-];
-
-interface RelatedArticlesProps {
-  articles?: BlogPost[];
-}
-
-function RelatedArticles({ articles = BLOG_POSTS }: RelatedArticlesProps) {
+function RelatedArticles({ news }: RelatedArticlesProps) {
   const { t } = useTranslation();
 
   return (
@@ -53,8 +23,8 @@ function RelatedArticles({ articles = BLOG_POSTS }: RelatedArticlesProps) {
 
         {/* Related Articles Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 lg:gap-6">
-          {articles.map((article) => (
-            <BlogCard key={article.id} post={article} />
+          {news.map((post, index) => (
+            <BlogCard key={post.id ?? post.name ?? index} post={post} />
           ))}
         </div>
       </div>

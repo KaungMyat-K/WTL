@@ -1,81 +1,28 @@
-import type { BlogPost } from "../../types";
 import BlogCard from "./BlogCard";
-import seaFreightImg from "../../assets/home/air-pic.jpg";
 import Button from "../ui/Button";
 import { useTranslation } from "react-i18next";
+import type { NewsData } from "../../types/index1";
 
-const BLOG_POSTS: BlogPost[] = [
-  {
-    id: 1,
-    title: "The Future of Global Shipping in 2024",
-    date: "Mar 15, 2024",
-    imageUrl: seaFreightImg,
-    href: "/news/1",
-  },
-  {
-    id: 2,
-    title: "Air Freight: Speed Meets Reliability",
-    date: "Mar 12, 2024",
-    imageUrl: seaFreightImg,
-    href: "/news/2",
-  },
-  {
-    id: 3,
-    title: "Smart Warehousing Solutions for 2024",
-    date: "Mar 10, 2024",
-    imageUrl: seaFreightImg,
-    href: "/news/3",
-  },
-  {
-    id: 4,
-    title: "Sustainable Sea Freight Practices",
-    date: "Mar 8, 2024",
-    imageUrl: seaFreightImg,
-    href: "/news/4",
-  },
-  {
-    id: 5,
-    title: "Supply Chain Trends to Watch in 2024",
-    date: "Mar 5, 2024",
-    imageUrl: seaFreightImg,
-    href: "/news/5",
-  },
-  {
-    id: 6,
-    title: "How Technology is Transforming Logistics",
-    date: "Mar 3, 2024",
-    imageUrl: seaFreightImg,
-    href: "/news/6",
-  },
-];
-
-interface BlogSectionProps {
-  posts?: BlogPost[];
-  onLearnMoreClick?: () => void;
+interface BlogListProps {
+  news: NewsData[];
 }
 
-function BlogListSection({
-  posts = BLOG_POSTS,
-  onLearnMoreClick,
-}: BlogSectionProps) {
+function BlogListSection({ news }: BlogListProps) {
   const { t } = useTranslation();
 
   return (
     <section className="pt-8 sm:pt-10 pb-16 sm:pb-24 md:pb-28 lg:pb-32 bg-[#e7eef1]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Blog Grid - 3 Cards Per Row */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-          {posts.map((post) => (
-            <BlogCard key={post.id} post={post} />
+          {news.map((post) => (
+            <BlogCard key={post.bid} post={post} />
           ))}
         </div>
 
-        {/* View All Button */}
         <div className="text-center mt-20 sm:mt-28 md:mt-32">
           <Button
             variant="primary"
-            onClick={onLearnMoreClick}
-            className="px-6 sm:px-8 py-3 sm:py-3.5  text-xs sm:text-sm md:text-base lg:text-lg"
+            className="px-6 sm:px-8 py-3 sm:py-3.5 text-xs sm:text-sm md:text-base lg:text-lg"
           >
             {t("button.learnMoreButton")}
           </Button>

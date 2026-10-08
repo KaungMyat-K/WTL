@@ -1,12 +1,20 @@
-import seaFreightImg from "../assets/home/ship-pic.jpg";
-import airCargoImg from "../assets/home/air-pic.jpg";
-import storageImg from "../assets/home/road-pic.jpg";
 import shipIcon from "../assets/home/ship.png";
-import roadIcon from "../assets/home/road.png";
+import landIcon from "../assets/home/road.png";
 import airIcon from "../assets/home/air.png";
 import warehousingIcon from "../assets/home/warehouse.png";
-import locations from "../assets/home/w1.png";
+import locations from "../assets/offices/location.png";
 import logo from "../assets/logo.png";
+import defaultLogo from "../assets/defaultPic.jpg";
+import landingPic1 from "../assets/home/landing01.jpg";
+import landingPic2 from "../assets/home/landing02.jpg";
+import landingPic3 from "../assets/home/landing03.jpg";
+import airFreightPic from "../assets/services/servicesAirFreight.jpg";
+import landFreightPic from "../assets/services/servicesLandFreight.jpg";
+import seaFreightPic from "../assets/services/servicesSeaFreight.jpg";
+import combinedLogisticsPic from "../assets/services/servicesCombinedLogistics.jpg";
+import localCustomsClearancePic from "../assets/services/servicesLocalCustomsClearance.jpg";
+import specialProjectCargoPic from "../assets/services/servicesSpecialProjectCargo.jpg";
+import warehousingTruckingPic from "../assets/services/servicesWarehousing&Trucking.jpg";
 
 export const Images = {
   logo: {
@@ -14,21 +22,26 @@ export const Images = {
     src: logo,
     alt: "logo",
   },
+  defaultLogo: {
+    id: "default_logo",
+    src: defaultLogo,
+    alt: "default_logo",
+  },
   home: [
     {
       id: "1",
-      src: seaFreightImg,
-      alt: "Sea freight container ship",
+      src: landingPic1,
+      alt: "landingpic",
     },
     {
       id: "2",
-      src: airCargoImg,
-      alt: "Cargo airplane flying",
+      src: landingPic2,
+      alt: "landingpic",
     },
     {
       id: "3",
-      src: storageImg,
-      alt: "Modern warehouse logistics",
+      src: landingPic3,
+      alt: "landingpic",
     },
   ],
   services: {
@@ -45,7 +58,7 @@ export const Images = {
       },
       {
         id: "land-freight",
-        src: roadIcon,
+        src: landIcon,
         alt: "Modern warehouse logistics",
       },
       {
@@ -57,37 +70,37 @@ export const Images = {
     img: [
       {
         id: "sea-freight",
-        src: seaFreightImg,
+        src: seaFreightPic,
         alt: "Sea freight container ship",
       },
       {
         id: "air-freight",
-        src: airCargoImg,
+        src: airFreightPic,
         alt: "Cargo airplane flying",
       },
       {
         id: "warehousing-&-trucking",
-        src: airCargoImg,
+        src: warehousingTruckingPic,
         alt: "Cargo airplane flying",
       },
       {
         id: "land-freight",
-        src: storageImg,
+        src: landFreightPic,
         alt: "Modern warehouse logistics",
       },
       {
         id: "local-customs-clearance",
-        src: storageImg,
+        src: localCustomsClearancePic,
         alt: "Local Customs Clearance",
       },
       {
         id: "special-project-cargo",
-        src: storageImg,
+        src: specialProjectCargoPic,
         alt: "Special Project Cargo",
       },
       {
         id: "combined-logistics",
-        src: storageImg,
+        src: combinedLogisticsPic,
         alt: "Special Project Cargo",
       },
     ],

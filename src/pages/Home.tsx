@@ -5,8 +5,12 @@ import LatestNewsSection from "../components/home/LatestNewsSection";
 import CtaSection from "../components/contact/CtaSection";
 import QuoteSection from "../components/home/QuoteSection";
 import CompanyDescriptionSection from "../components/home/CompanyDescriptionSection";
+import { fetchNewsQuery } from "../api/query";
+import { useQuery } from "@tanstack/react-query";
 
 function Home() {
+  const { data: news = [], isPending, isError } = useQuery(fetchNewsQuery());
+
   return (
     <>
       <HeroSection />
@@ -14,7 +18,9 @@ function Home() {
       <CompanyDescriptionSection />
       <ServiceSection />
       <QuoteSection />
-      <LatestNewsSection />
+      {!isPending && !isError && news.length > 0 && (
+        <LatestNewsSection news={news} />
+      )}
       <CtaSection />
     </>
   );

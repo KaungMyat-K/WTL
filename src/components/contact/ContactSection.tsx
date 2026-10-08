@@ -33,7 +33,7 @@ function ContactSection() {
         </div>
       </div>
 
-      <div className="relative z-10 mt-20 sm:mt-28 md:mt-32 lg:mt-40 mb-12 sm:mb-16 md:mb-20 flex flex-col items-center gap-2 sm:gap-3 md:gap-4">
+      <div className=" mt-20 sm:mt-28 md:mt-32 lg:mt-40 mb-12 sm:mb-16 md:mb-20 flex flex-col items-center gap-2 sm:gap-3 md:gap-4">
         <h2 className="flex items-center justify-center gap-2 sm:gap-3 md:gap-4 text-4xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold  tracking-wider mr-10 sm:mr-16 md:mr-24 lg:mr-32">
           <span>" {t("contact.slogan.primaryTitle")}</span>
           <img
