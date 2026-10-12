@@ -109,10 +109,12 @@ export interface NewsTranslation {
   content: string;
 }
 
-export interface NewsTranslations {
-  th?: NewsTranslation;
-  en?: NewsTranslation;
-}
+export type NewsTranslations = Record<string, NewsTranslation>;
+
+// export interface NewsTranslations {
+//   th?: NewsTranslation;
+//   en?: NewsTranslation;
+// }
 
 export interface NewsDetailData {
   bid: string;
