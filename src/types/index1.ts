@@ -78,10 +78,12 @@ export interface Location {
 
 //API
 
-export interface NewsNames {
-  th?: string;
-  en?: string;
-}
+// export interface NewsNames {
+//   th?: string;
+//   en?: string;
+// }
+
+export type NewsNames = Record<string, string>;
 
 export interface NewsData {
   bid: string;
