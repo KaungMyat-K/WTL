@@ -30,7 +30,7 @@ function ServiceDetail() {
       <DetailHeroSection
         title={currentService.title}
         img={img?.src || ""}
-        category={t("nav.links.services")}
+        parentLabel={t("nav.links.services")}
       />
       <OverViewSection
         title={currentService.details.overview.title}

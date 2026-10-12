@@ -1,12 +1,15 @@
-import { useLocalizedContent } from "../../hooks/useLocalizedContent";
+import { Link } from "react-router-dom";
+import { useLocalizedNewsContent } from "../../hooks/useLocalizedNewsContent";
 import type { NewsDetailData } from "../../types/index1";
 import { Icons } from "../icons";
+import { ROUTES } from "../../config/site1";
 
 interface BlogDetailsProps {
   post: NewsDetailData;
+  parentLabel: string;
 }
 
-function BlogDetailSection({ post }: BlogDetailsProps) {
+function BlogDetailSection({ post, parentLabel }: BlogDetailsProps) {
   const formattedDate = post?.createdDate
     ? new Date(post.createdDate).toLocaleDateString("en-US", {
         year: "numeric",
@@ -15,15 +18,43 @@ function BlogDetailSection({ post }: BlogDetailsProps) {
       })
     : "";
 
-  const content = useLocalizedContent(post?.translations);
+  const content = useLocalizedNewsContent(post?.translations);
 
   return (
     <section className="py-12 md:py-16 lg:py-36 bg-[#e7eef1] -mt-12">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 md:pt-18 lg:pt-16 xl:pt-0 ">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 md:pt-18 lg:pt-16 xl:pt-0 ">
+        <nav
+          aria-label="Breadcrumb"
+          className="flex items-center gap-1.5 sm:gap-2 text-xs md:text-lg text-gray-400 mb-6 sm:mb-8 md:mb-10 min-w-0"
+        >
+          {/* Parent / Home Link */}
+          <Link
+            to={ROUTES.NEWS}
+            className="hover:text-secondary transition-colors shrink-0 max-w-[100px] sm:max-w-none truncate"
+          >
+            {parentLabel}
+          </Link>
+
+          {/* Separator */}
+          <span
+            aria-hidden="true"
+            className="text-gray-400 shrink-0 select-none"
+          >
+            ›
+          </span>
+
+          {/* Current Page Title */}
+          <span
+            className="text-secondary font-medium  truncate max-w-[180px] xs:max-w-[240px] sm:max-w-[350px] md:max-w-md lg:max-w-xl"
+            title={content?.name}
+          >
+            {content?.name}
+          </span>
+        </nav>
         {/* Category */}
         <div className="text-center mb-6 md:mb-8">
           <span className="inline-block bg-secondary/10 text-secondary text-xs sm:text-sm   px-3 py-1 rounded-md">
-            {post?.category?.name}
+            {post.category?.name}
           </span>
         </div>
 
@@ -53,16 +84,22 @@ function BlogDetailSection({ post }: BlogDetailsProps) {
         </div>
 
         {/* Content */}
-        <div className="space-y-4 sm:space-y-5 md:space-y-6 pt-10">
+
+        <div className="space-y-4 sm:space-y-5 md:space-y-6 pt-10 min-w-0">
           <div
-            className="prose max-w-none text-gray-600  [&_img]:mx-auto [&_img]:rounded-md text-left"
+            className="prose max-w-none text-gray-600 text-left
+                       [word-break:break-word] [overflow-wrap:anywhere]
+                       [&_img]:max-w-full [&_img]:h-auto [&_img]:mx-auto [&_img]:rounded-md
+                       [&_iframe]:max-w-full [&_video]:max-w-full
+                       [&_table]:block [&_table]:overflow-x-auto [&_table]:max-w-full
+                       [&_pre]:max-w-full [&_pre]:overflow-x-auto [&_pre]:whitespace-pre-wrap"
             dangerouslySetInnerHTML={{ __html: content.content }}
           />
         </div>
 
         {(post.fbRef || post.linkedinRef) && (
           <div className="flex flex-wrap items-center justify-start gap-3 sm:gap-4 md:gap-5 mt-16 sm:mt-20 md:mt-24 lg:mt-32">
-            <span className="text-gray-600 font-bold text-sm sm:text-lg">
+            <span className="text-gray-600 font-medium text-sm sm:text-lg">
               Posted on
             </span>
 

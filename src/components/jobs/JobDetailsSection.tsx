@@ -1,142 +1,91 @@
-export interface JobDetailsProps {
-  description?: string;
-  responsibilities?: string[];
-  requirements?: string[];
-  benefits?: string[];
+import { Link } from "react-router-dom";
+import { useLocalizedJobContent } from "../../hooks/useLocalizedJobContent";
+import type { JobDetailData } from "../../types/index1";
+import { ROUTES } from "../../config/site1";
+import { Icons } from "../icons";
+
+interface BlogDetailsProps {
+  job: JobDetailData;
+  parentLabel: string;
 }
 
-function JobDetailsSection({
-  description = "We are seeking an experienced Senior Logistics Manager to oversee and optimize our supply chain operations. The ideal candidate will have a strong background in logistics management, excellent leadership skills, and a proven track record of improving operational efficiency.",
-  responsibilities = [
-    "Oversee daily logistics operations and supply chain activities",
-    "Develop and implement logistics strategies to improve efficiency",
-    "Manage relationships with shipping partners and vendors",
-    "Monitor and analyze logistics performance metrics",
-    "Lead and mentor a team of logistics professionals",
-  ],
-  requirements = [
-    "Bachelor's degree in Logistics, Supply Chain, or related field",
-    "5+ years of experience in logistics management",
-    "Strong leadership and team management skills",
-    "Excellent communication and problem-solving abilities",
-    "Proficiency in logistics software and MS Office Suite",
-  ],
-  benefits = [
-    "Competitive Salary",
-    "Health Insurance",
-    "Flexible Working Hours",
-    "Career Growth Opportunities",
-  ],
-}: JobDetailsProps) {
+function JobDetailsSection({ job, parentLabel }: BlogDetailsProps) {
+  const title = useLocalizedJobContent(
+    job.translations,
+    "jobPosition",
+    "Job Title"
+  );
+  const location = useLocalizedJobContent(job.translations, "location", "");
+  const description = useLocalizedJobContent(
+    job.translations,
+    "jobDescription",
+    ""
+  );
   return (
-    <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
-      <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Job Description */}
-        <div className="mb-8 sm:mb-10">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3 sm:mb-4">
-            Job Description
-          </h2>
-          <div className="max-w-3xl mx-auto">
-            <p className="text-gray-600 text-sm sm:text-base leading-relaxed text-left">
-              {description}
-            </p>
+    <section>
+      <div className="relative bg-gray-900 -mt-12 pt-24 md:pt-32 lg:pt-40 pb-10 sm:pb-12 md:pb-16  lg:pb-20  xl:pb-28 2xl:pb-36">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl">
+            <nav
+              aria-label="Breadcrumb"
+              className="flex items-center gap-1.5 sm:gap-2 text-xs md:text-lg text-gray-400 mb-4 sm:mb-6 md:mb-8 min-w-0"
+            >
+              {/* Parent Services Link */}
+              <Link
+                to={ROUTES.JOBS}
+                className="hover:text-secondary transition-colors shrink-0 max-w-[120px] sm:max-w-none truncate"
+              >
+                {parentLabel}
+              </Link>
+
+              {/* Separator */}
+              <span
+                aria-hidden="true"
+                className="text-gray-400 shrink-0 select-none"
+              >
+                ›
+              </span>
+
+              {/* Current Service Title */}
+              <span
+                className="text-secondary font-medium truncate min-w-0 max-w-[160px] xs:max-w-[220px] sm:max-w-[340px] md:max-w-md lg:max-w-xl"
+                title={title}
+              >
+                {title}
+              </span>
+            </nav>
+            <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white mb-4 sm:mb-6 md:mb-8">
+              {title}
+            </h1>
+            <div className="flex items-center gap-2 sm:gap-x-4 md:gap-x-6 lg:gap-x-8">
+              <div className="flex items-center gap-2">
+                <Icons.mapPin className="w-4 h-4 sm:w-4 sm:h-4 md:w-5 md:h-5 text-gray-100/70 shrink-0" />
+                <span className="text-gray-100 text-xs sm:text-sm md:text-base lg:text-lg ">
+                  {location}
+                </span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <Icons.briefcase className="w-4 h-4 sm:w-4 sm:h-4 md:w-5 md:h-5 text-gray-100/70 shrink-0" />
+                <span className="text-gray-100 text-xs sm:text-sm md:text-base lg:text-lg ">
+                  {job.type?.name}
+                </span>
+              </div>
+            </div>
           </div>
         </div>
-
-        {/* Key Responsibilities */}
-        <div className="mb-8 sm:mb-10">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3 sm:mb-4">
-            Key Responsibilities
-          </h2>
-          <div className="max-w-3xl mx-auto">
-            <ul className="space-y-2 sm:space-y-3">
-              {responsibilities.map((item, index) => (
-                <li
-                  key={index}
-                  className="flex items-start gap-2 sm:gap-3 text-gray-600 text-left text-sm sm:text-base"
-                >
-                  <svg
-                    className="w-4 h-4 sm:w-5 sm:h-5 text-secondary flex-shrink-0 mt-0.5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        {/* Requirements */}
-        <div className="mb-8 sm:mb-10">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3 sm:mb-4">
-            Requirements
-          </h2>
-          <div className="max-w-3xl mx-auto">
-            <ul className="space-y-2 sm:space-y-3">
-              {requirements.map((item, index) => (
-                <li
-                  key={index}
-                  className="flex items-start gap-2 sm:gap-3 text-gray-600 text-left text-sm sm:text-base"
-                >
-                  <svg
-                    className="w-4 h-4 sm:w-5 sm:h-5 text-secondary flex-shrink-0 mt-0.5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        {/* Benefits */}
-        <div className="mb-8 sm:mb-10">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3 sm:mb-4">
-            Benefits
-          </h2>
-          <div className="max-w-3xl mx-auto">
-            <ul className="space-y-2 sm:space-y-3">
-              {benefits.map((item, index) => (
-                <li
-                  key={index}
-                  className="flex items-start gap-2 sm:gap-3 text-gray-600 text-left text-sm sm:text-base"
-                >
-                  <svg
-                    className="w-4 h-4 sm:w-5 sm:h-5 text-secondary flex-shrink-0 mt-0.5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
+      </div>
+      <div className="py-12 sm:py-16 md:py-20 bg-gray-50">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 min-w-0">
+          <div
+            className="prose max-w-none text-gray-600 text-left min-w-0
+                   [word-break:break-word] [overflow-wrap:anywhere]
+                   [&_img]:max-w-full [&_img]:h-auto [&_img]:mx-auto [&_img]:rounded-md
+                   [&_iframe]:max-w-full [&_video]:max-w-full
+                   [&_table]:block [&_table]:overflow-x-auto [&_table]:max-w-full
+                   [&_pre]:max-w-full [&_pre]:overflow-x-auto [&_pre]:whitespace-pre-wrap"
+            dangerouslySetInnerHTML={{ __html: description }}
+          />
         </div>
       </div>
     </section>

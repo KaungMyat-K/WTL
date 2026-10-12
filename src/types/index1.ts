@@ -126,6 +126,53 @@ export interface NewsDetailData {
   relatedBlogs: NewsData[];
 }
 
+export interface JobTranslation {
+  jobPosition: string;
+  location: string;
+}
+
+export type JobTranslations = Record<string, JobTranslation>;
+
+export interface JobData {
+  jid: string;
+  translations: JobTranslations;
+  type: string;
+}
+
+export interface JobListApiResponse {
+  content: JobData[];
+  page: {
+    size: number;
+    number: number;
+    totalElements: number;
+    totalPages: number;
+  };
+}
+
+interface JobType {
+  id: number;
+  name: string;
+}
+
+export interface JobDetailsTranslation {
+  jobPosition: string;
+  location: string;
+  jobDescription: string;
+}
+
+export type JobDetailsTranslations = Record<string, JobDetailsTranslation>;
+
+export interface JobDetailData {
+  jid: string;
+  translations: JobDetailsTranslations;
+  type?: JobType;
+  createdDate: string;
+  fbRef?: string | null;
+  linkedinRef?: string | null;
+  open: boolean;
+  is_open: boolean;
+}
+
 export interface NetworkData {
   name: string;
   imageUrl: string;

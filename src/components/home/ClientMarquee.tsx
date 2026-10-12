@@ -45,7 +45,7 @@ function ClientMarquee() {
     };
   }, [networks, repeat]);
 
-  if (!isPending && !isError && networks.length === 0) {
+  if (isPending || isError || networks.length === 0) {
     return null;
   }
 

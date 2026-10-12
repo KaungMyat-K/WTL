@@ -3,6 +3,9 @@ import type {
   NewsData,
   NewsDetailData,
   NetworkData,
+  JobListApiResponse,
+  JobData,
+  JobDetailData,
 } from "../types/index1";
 import axiosClient from "./axiosClient";
 
@@ -34,7 +37,6 @@ const fetchNetworks = async (): Promise<NetworkData[]> => {
   const { data } = await axiosClient.get<NetworkData[]>("/public/networks", {
     timeout: 60000,
   });
-  console.log("fetchNetworks data", data);
   return data || [];
 };
 
@@ -43,8 +45,8 @@ export const fetchNetworksQuery = () => ({
   queryFn: fetchNetworks,
 });
 
-const fetchJobs = async (): Promise<NewsData[]> => {
-  const { data } = await axiosClient.get<NewsListApiResponse>("/public/jobs", {
+const fetchJobs = async (): Promise<JobData[]> => {
+  const { data } = await axiosClient.get<JobListApiResponse>("/public/jobs", {
     timeout: 60000,
   });
 
@@ -57,7 +59,7 @@ export const fetchJobsQuery = () => ({
 });
 
 const fetchOneJob = async (id: string) => {
-  const { data } = await axiosClient.get<NewsDetailData>(`/public/jobs/${id}`);
+  const { data } = await axiosClient.get<JobDetailData>(`/public/jobs/${id}`);
   return data;
 };
 

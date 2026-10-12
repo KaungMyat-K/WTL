@@ -1,176 +1,393 @@
 {
   "nav": {
-    "home": "Home",
-    "blog": "Blog",
-    "jobs": "Jobs",
-    "services": "Services",
-    "contact": "Contact"
+    "links": {
+      "home": "Home",
+      "news": "Newsroom",
+      "jobs": "Jobs",
+      "services": "Services",
+      "contact": "Contact Us",
+      "offices": "Offices"
+    },
+    "footer": {
+      "description": "International freight forwarding ---- from origin to last mile, across ocean with our track.",
+      "company": "Company",
+      "services": "Services",
+      "followUs": "Follow Us"
+    }
   },
   "home": {
     "hero": {
-      "items": [
-        {
-          "id": "seaFreight",
-          "primaryTitle": "RELIABLE SEA FREIGHT",
-          "secondaryTitle": "SOLUTIONS",
-          "description": "Connecting businesses worldwide with efficient and cost-effective shipping solutions."
-        },
-        {
-          "id": "airFreight",
-          "primaryTitle": "Air Freight",
-          "secondaryTitle": "FAST & SECURE",
-          "description": "Time-sensitive deliveries made easy with our premium air freight services across the globe."
-        },
-        {
-          "id": "roadFreight",
-          "primaryTitle": "SMART STORAGE",
-          "secondaryTitle": "SOLUTIONS",
-          "description": "State-of-the-art warehousing and distribution centers to optimize your supply chain."
-        }
-      ],
-      "button": "Contact Us"
+      "items": {
+        "id": "sea-freight",
+        "primaryTitle": "YOUR WORLD",
+        "secondaryTitle": "OUR TRACK",
+        "description": "International freight forwarding ---- from origin to last mile, across ocean with our track."
+      }
+    },
+    "companyDescription": {
+      "primaryTitle": "EMPOWERING GLOBAL TRADE",
+      "secondaryTitle": "THROUGH FRICTIONLESS LOGISTICS",
+      "description": "WTL Group founded in 2009, as World Track Logistics / WTL International Logistics Co., Ltd which is a professional freight forwarding and global logistics service provider. We specialize in international air freight, sea freight, customs clearance, inland trucking, and warehouse solutions. With a strong global network and experienced local teams, we support customers in managing shipments efficiently, reducing lead times, and optimizing logistics performance.We are committed to accuracy, transparency, and long-term partnership."
     },
     "clients": {
-      "title": "Trusted by"
+      "title": "WTL Networks & Associations"
     },
     "services": {
-      "primaryTitle": "",
-      "secondaryTitle": "",
-      "description": "",
-      "button": "Explore Our Services"
+      "primaryTitle": "COMPREHENSIVE LOGISTICS",
+      "secondaryTitle": "SOLUTIONS",
+      "description": "We provide end-to-end logistics services to meet all your shipping and supply chain needs. From sea and air freight to road and rail transportation, we offer reliable solutions tailored to your business requirements.",
+      "ourServiceButton": "Explore Our Services"
     },
     "getAQuote": {
-      "title": "",
-      "description": "",
-      "newCustomerButton": "",
-      "existingCustomerButton": ""
+      "primaryTitle": "GET A QUOTE OR TRACK FOR YOUR SHIPMENTS",
+      "description": ""
     },
     "blogs": {
-      "primaryTitle": "",
-      "secondaryTitle": "",
-      "button": ""
+      "primaryTitle": "NEWSROOM"
     }
   },
   "services": {
     "hero": {
-      "primaryTitle": "RELIABLE SEA FREIGHT",
-      "secondaryTitle": "SOLUTIONS",
-      "description": "Connecting businesses worldwide with efficient and cost-effective shipping solutions.",
-      "stats": [
-        {
-          "id": 1,
-          "title": "Shipments Delivered",
-          "value": "10K+"
-        },
-        {
-          "id": 2,
-          "title": "Countries Served",
-          "value": "50+"
-        },
-        {
-          "id": 3,
-          "title": "Satisfaction Rate",
-          "value": "100%"
-        }
-      ]
+      "primaryTitle": "Seamless Shipping Solutions",
+      "secondaryTitle": "for Global Logistics",
+      "description": "Since our journey began in Shenzhen in 2009, WTL has expanded its presence across Shanghai, Zhongshan, and Thailand, building strong global connectivity through trusted airline, carrier, and logistics partnerships."
     },
     "servicesList": {
-      "primaryTitle": "",
-      "secondaryTitle": "",
-      "description": "",
-      "button": "",
+      "primaryTitle": "What We",
+      "secondaryTitle": "Offer",
+      "description": "We provide comprehensive logistics solutions tailored to meet your business needs. From sea and air freight to road and rail transportation, we offer reliable services across the globe.",
       "items": [
         {
-          "id": 1,
-          "title": "",
+          "id": "sea-freight",
+          "title": "Sea Freight",
           "description": "",
-          "shortDescription": "",
+          "shortDescription": "Reliable ocean solutions for global trade",
           "details": {
             "overview": {
-              "title": "",
-              "content": ""
+              "title": "Overview",
+              "content": "Flexible and cost effective ocean freight solutions connecting ports and markets worldwide.\nLCL  For smaller shipments that do not require a full container, with consolidation, flexible schedules and coordinated cargo handling.\nFCL  Dedicated container solutions for larger shipments, with options for equipment, routing and shipping schedules."
             },
             "keyFeatures": {
-              "title": "",
+              "primaryTitle": "KEY FEATURES",
+              "secondaryTitle": "OF SEA FREIGHT SERVICE",
               "features": [
                 {
-                  "id": 1,
-                  "title": "",
-                  "description": ""
+                  "id": "fastDelivery",
+                  "title": "Fast Delivery",
+                  "description": "Time-sensitive shipments with priority handling and express delivery options."
                 },
                 {
-                  "id": 1,
-                  "title": "",
-                  "description": ""
+                  "id": "globalNetwork",
+                  "title": "Global Network",
+                  "description": "Extensive network covering 100+ destinations worldwide."
                 },
                 {
-                  "id": 1,
-                  "title": "",
-                  "description": ""
+                  "id": "realTimeTracking",
+                  "title": "Real-Time Tracking",
+                  "description": "Track your shipments in real-time with our advanced tracking system."
+                },
+                {
+                  "id": "support",
+                  "title": "24/7 Support",
+                  "description": "Dedicated customer support available around the clock."
+                },
+                {
+                  "id": "priorityHandling",
+                  "title": "Priority Handling",
+                  "description": "Priority handling for urgent and time-critical shipments."
+                },
+                {
+                  "id": "costEffective",
+                  "title": "Cost-Effective",
+                  "description": "Competitive rates without compromising on service quality."
                 }
               ]
             }
           }
         },
         {
-          "id": 2,
-          "title": "",
+          "id": "air-freight",
+          "title": "Air Freight",
           "description": "",
-          "shortDescription": "",
+          "shortDescription": "Speed when every moment matters",
           "details": {
             "overview": {
-              "title": "",
-              "content": ""
+              "title": "Overview",
+              "content": "Fast and flexible air freight solutions for time sensitive and high value cargo. Through our airline and international partner network, we coordinate suitable routing and shipment handling from origin pickup to final delivery."
             },
             "keyFeatures": {
-              "title": "",
+              "primaryTitle": "KEY FEATURES",
+              "secondaryTitle": "OF AIR FREIGHT SERVICE",
               "features": [
                 {
-                  "id": 1,
-                  "title": "",
-                  "description": ""
+                  "id": "fastDelivery",
+                  "title": "Fast Delivery",
+                  "description": "Time-sensitive shipments with priority handling and express delivery options."
                 },
                 {
-                  "id": 1,
-                  "title": "",
-                  "description": ""
+                  "id": "globalNetwork",
+                  "title": "Global Network",
+                  "description": "Extensive network covering 100+ destinations worldwide."
                 },
                 {
-                  "id": 1,
-                  "title": "",
-                  "description": ""
+                  "id": "realTimeTracking",
+                  "title": "Real-Time Tracking",
+                  "description": "Track your shipments in real-time with our advanced tracking system."
+                },
+                {
+                  "id": "support",
+                  "title": "24/7 Support",
+                  "description": "Dedicated customer support available around the clock."
+                },
+                {
+                  "id": "priorityHandling",
+                  "title": "Priority Handling",
+                  "description": "Priority handling for urgent and time-critical shipments."
+                },
+                {
+                  "id": "costEffective",
+                  "title": "Cost-Effective",
+                  "description": "Competitive rates without compromising on service quality."
                 }
               ]
             }
           }
         },
         {
-          "id": 3,
-          "title": "",
+          "id": "land-freight",
+          "title": "Land Freight",
           "description": "",
-          "shortDescription": "",
+          "shortDescription": "Connecting borders and businesses",
           "details": {
             "overview": {
-              "title": "",
-              "content": ""
+              "title": "Overview",
+              "content": "Trucking and cross border transportation connecting key markets throughout Southeast Asia. WTL Group coordinates inland movement and border procedures between factories, warehouses, ports, airports and final destinations."
             },
             "keyFeatures": {
-              "title": "",
+              "primaryTitle": "KEY FEATURES",
+              "secondaryTitle": "OF LAND FREIGHT SERVICE",
               "features": [
                 {
-                  "id": 1,
-                  "title": "",
-                  "description": ""
+                  "id": "fastDelivery",
+                  "title": "Fast Delivery",
+                  "description": "Time-sensitive shipments with priority handling and express delivery options."
                 },
                 {
-                  "id": 1,
-                  "title": "",
-                  "description": ""
+                  "id": "globalNetwork",
+                  "title": "Global Network",
+                  "description": "Extensive network covering 100+ destinations worldwide."
                 },
                 {
-                  "id": 1,
-                  "title": "",
-                  "description": ""
+                  "id": "realTimeTracking",
+                  "title": "Real-Time Tracking",
+                  "description": "Track your shipments in real-time with our advanced tracking system."
+                },
+                {
+                  "id": "support",
+                  "title": "24/7 Support",
+                  "description": "Dedicated customer support available around the clock."
+                },
+                {
+                  "id": "priorityHandling",
+                  "title": "Priority Handling",
+                  "description": "Priority handling for urgent and time-critical shipments."
+                },
+                {
+                  "id": "costEffective",
+                  "title": "Cost-Effective",
+                  "description": "Competitive rates without compromising on service quality."
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "warehousing-&-trucking",
+          "title": "Warehousing & Trucking",
+          "description": "",
+          "shortDescription": "Storage connected to your supply chain",
+          "details": {
+            "overview": {
+              "title": "Overview",
+              "content": "From short term storage to consolidation and distribution, WTL Group coordinates warehouse services to keep cargo organized and ready for its next movement."
+            },
+            "keyFeatures": {
+              "primaryTitle": "KEY FEATURES",
+              "secondaryTitle": "OF Warehousing & Trucking",
+              "features": [
+                {
+                  "id": "fastDelivery",
+                  "title": "Fast Delivery",
+                  "description": "Time-sensitive shipments with priority handling and express delivery options."
+                },
+                {
+                  "id": "globalNetwork",
+                  "title": "Global Network",
+                  "description": "Extensive network covering 100+ destinations worldwide."
+                },
+                {
+                  "id": "realTimeTracking",
+                  "title": "Real-Time Tracking",
+                  "description": "Track your shipments in real-time with our advanced tracking system."
+                },
+                {
+                  "id": "support",
+                  "title": "24/7 Support",
+                  "description": "Dedicated customer support available around the clock."
+                },
+                {
+                  "id": "priorityHandling",
+                  "title": "Priority Handling",
+                  "description": "Priority handling for urgent and time-critical shipments."
+                },
+                {
+                  "id": "costEffective",
+                  "title": "Cost-Effective",
+                  "description": "Competitive rates without compromising on service quality."
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "local-customs-clearance",
+          "title": "Local Customs Clearance",
+          "description": "",
+          "shortDescription": "Supporting smooth cargo clearance",
+          "details": {
+            "overview": {
+              "title": "Overview",
+              "content": "Our local teams coordinate import and export documentation, declarations and applicable regulatory requirements with customers and relevant authorities to help keep shipments moving."
+            },
+            "keyFeatures": {
+              "primaryTitle": "KEY FEATURES",
+              "secondaryTitle": "OF LOCAL CUSTOMS CLEARANCE",
+              "features": [
+                {
+                  "id": "fastDelivery",
+                  "title": "Fast Delivery",
+                  "description": "Time-sensitive shipments with priority handling and express delivery options."
+                },
+                {
+                  "id": "globalNetwork",
+                  "title": "Global Network",
+                  "description": "Extensive network covering 100+ destinations worldwide."
+                },
+                {
+                  "id": "realTimeTracking",
+                  "title": "Real-Time Tracking",
+                  "description": "Track your shipments in real-time with our advanced tracking system."
+                },
+                {
+                  "id": "support",
+                  "title": "24/7 Support",
+                  "description": "Dedicated customer support available around the clock."
+                },
+                {
+                  "id": "priorityHandling",
+                  "title": "Priority Handling",
+                  "description": "Priority handling for urgent and time-critical shipments."
+                },
+                {
+                  "id": "costEffective",
+                  "title": "Cost-Effective",
+                  "description": "Competitive rates without compromising on service quality."
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "special-project-cargo",
+          "title": "Special Project Cargo",
+          "description": "",
+          "shortDescription": "Solutions for cargo beyond standard dimensions",
+          "details": {
+            "overview": {
+              "title": "Overview",
+              "content": "Oversized, heavy, sensitive and complex cargo requires careful planning. WTL Group coordinates routing, equipment, handling, customs and transportation requirements from initial planning through delivery."
+            },
+            "keyFeatures": {
+              "primaryTitle": "KEY FEATURES",
+              "secondaryTitle": "OF SPECIAL PROJECT CARGO",
+              "features": [
+                {
+                  "id": "fastDelivery",
+                  "title": "Fast Delivery",
+                  "description": "Time-sensitive shipments with priority handling and express delivery options."
+                },
+                {
+                  "id": "globalNetwork",
+                  "title": "Global Network",
+                  "description": "Extensive network covering 100+ destinations worldwide."
+                },
+                {
+                  "id": "realTimeTracking",
+                  "title": "Real-Time Tracking",
+                  "description": "Track your shipments in real-time with our advanced tracking system."
+                },
+                {
+                  "id": "support",
+                  "title": "24/7 Support",
+                  "description": "Dedicated customer support available around the clock."
+                },
+                {
+                  "id": "priorityHandling",
+                  "title": "Priority Handling",
+                  "description": "Priority handling for urgent and time-critical shipments."
+                },
+                {
+                  "id": "costEffective",
+                  "title": "Cost-Effective",
+                  "description": "Competitive rates without compromising on service quality."
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "combined-logistics",
+          "title": "Combined Logistics",
+          "description": "",
+          "shortDescription": "Air sea and land in one coordinated solution",
+          "details": {
+            "overview": {
+              "title": "Overview",
+              "content": "When a shipment needs more than one transport mode, WTL Group combines air, sea and land services. We assess routing, transit time and cost to develop a suitable multimodal transport plan."
+            },
+            "keyFeatures": {
+              "primaryTitle": "KEY FEATURES",
+              "secondaryTitle": "OF COMBINED LOGISTICS",
+              "features": [
+                {
+                  "id": "fastDelivery",
+                  "title": "Fast Delivery",
+                  "description": "Time-sensitive shipments with priority handling and express delivery options."
+                },
+                {
+                  "id": "globalNetwork",
+                  "title": "Global Network",
+                  "description": "Extensive network covering 100+ destinations worldwide."
+                },
+                {
+                  "id": "realTimeTracking",
+                  "title": "Real-Time Tracking",
+                  "description": "Track your shipments in real-time with our advanced tracking system."
+                },
+                {
+                  "id": "support",
+                  "title": "24/7 Support",
+                  "description": "Dedicated customer support available around the clock."
+                },
+                {
+                  "id": "priorityHandling",
+                  "title": "Priority Handling",
+                  "description": "Priority handling for urgent and time-critical shipments."
+                },
+                {
+                  "id": "costEffective",
+                  "title": "Cost-Effective",
+                  "description": "Competitive rates without compromising on service quality."
                 }
               ]
             }
@@ -181,34 +398,59 @@
   },
   "jobs": {
     "hero": {
-      "title": "",
-      "subtitle": ""
+      "primaryTitle": "Career",
+      "secondaryTitle": "Join the Team That Keeps Business Moving"
     },
-    "button": ""
+    "apply": {
+      "tag": "Apply Now",
+      "primaryTitle": "Sounds Interesting?",
+      "secondaryTitle": "Make Your Move Today!"
+    }
   },
   "blogs": {
     "hero": {
-      "title": "",
-      "subtitle": ""
+      "primaryTitle": "Want to Know What's Moving the Industry?",
+      "secondaryTitle": "WTL Newsroom"
     },
-    "button": ""
+    "details": {
+      "relatedArticles": "Related Articles"
+    }
   },
   "contact": {
     "hero": {
-      "title": "",
-      "description": "",
+      "primaryTitle": "Streamline\nyour\nsupply\nchain",
+      "secondaryTitle": "with us.",
+      "description": "Have questions or need assistance? Reach out to our team and we'll get back to you within 24 hours.",
       "form": {
-        "name": "",
-        "email": "",
-        "message": "",
-        "button": ""
+        "title": "Contact Us",
+        "name": "Full Name",
+        "email": "Email",
+        "message": "Message"
       }
     },
     "location": {
       "hero": {
-        "title": "",
-        "subtitle": ""
+        "primaryTitle": "Find Us Here",
+        "secondaryTitle": "WE WORK ALL OVER THE WORLD"
       }
+    },
+    "CTA": {
+      "primaryTitle": "Ready to Move Your Business Forward? Get in touch."
+    },
+    "slogan": {
+      "primaryTitle": "YOUR WORLD",
+      "secondaryTitle": "OUR TRACK"
     }
+  },
+  "button": {
+    "exploreOurServicesButton": "Explore Our Services",
+    "contactUsButton": "Contact Us",
+    "learnMoreButton": "Learn More",
+    "newInquiryButton": "NEW INQUIRY",
+    "shipmentTrackingButton": "Shipment Tracking",
+    "applyButton": "Apply Now",
+    "sendButton": "Send",
+    "getInTouchButton": "Get in Touch",
+    "employeePortalButton": "Employee Portal"
   }
 }

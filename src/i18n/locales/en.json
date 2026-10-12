@@ -25,9 +25,9 @@
       }
     },
     "companyDescription": {
-      "primaryTitle": "EMPOWERING GLOBAL TRADE",
-      "secondaryTitle": "THROUGH FRICTIONLESS LOGISTICS",
-      "description": "WTL Group founded in 2009, as World Track Logistics / WTL International Logistics Co., Ltd which is a professional freight forwarding and global logistics service provider. We specialize in international air freight, sea freight, customs clearance, inland trucking, and warehouse solutions. With a strong global network and experienced local teams, we support customers in managing shipments efficiently, reducing lead times, and optimizing logistics performance.We are committed to accuracy, transparency, and long-term partnership."
+      "primaryTitle": "OUR",
+      "secondaryTitle": "BRAND STORY",
+      "description": "Every business is a world of its own — built on unique goals, navigating different markets, and facing its own challenges.At WTL, we believe logistics should never be defined by rigid solutions. It should be shaped around your needs, your goals, and your world."
     },
     "clients": {
       "title": "WTL Networks & Associations"
@@ -39,7 +39,7 @@
       "ourServiceButton": "Explore Our Services"
     },
     "getAQuote": {
-      "primaryTitle": "GET A QUOTE OR TRACK FOR YOUR SHIPMENTS",
+      "primaryTitle": "GET A QUOTE or TRACK FOR YOUR SHIPMENTS",
       "description": ""
     },
     "blogs": {

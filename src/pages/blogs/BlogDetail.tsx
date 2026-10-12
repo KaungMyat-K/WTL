@@ -6,8 +6,10 @@ import { useQuery } from "@tanstack/react-query";
 import { fetchOneNewsQuery } from "../../api/query";
 import { ROUTES } from "../../config/site1";
 import Button from "../../components/ui/Button";
+import { useTranslation } from "react-i18next";
 
 function BlogDetail() {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const { blogId } = useParams<{ blogId: string }>();
 
@@ -47,7 +49,7 @@ function BlogDetail() {
 
   return (
     <>
-      <BlogDetailSection post={post} />
+      <BlogDetailSection post={post} parentLabel={t("nav.links.news")} />
       {post.relatedBlogs?.length > 0 && (
         <RelatedArticles news={post.relatedBlogs} />
       )}

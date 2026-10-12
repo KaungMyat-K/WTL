@@ -1,7 +1,10 @@
 import { useTranslation } from "react-i18next";
 import type { NewsTranslation, NewsTranslations } from "../types/index1";
+import type { siteConfig } from "../config/site1";
 
-export function useLocalizedContent(
+type Locale = (typeof siteConfig.language)[number]["id"];
+
+export function useLocalizedNewsContent(
   translations: NewsTranslations | null | undefined,
   fallback: NewsTranslation = { name: "", content: "" }
 ): NewsTranslation {
@@ -9,8 +12,8 @@ export function useLocalizedContent(
 
   if (!translations) return fallback;
 
-  const currentLang = i18n.language as "th" | "en";
-  const otherLang = currentLang === "th" ? "en" : "th";
+  const currentLang = i18n.language as Locale;
+  const otherLang: Locale = currentLang === "th" ? "en" : "th";
 
   const current = translations[currentLang];
   const other = translations[otherLang];

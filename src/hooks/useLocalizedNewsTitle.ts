@@ -1,5 +1,8 @@
 import { useTranslation } from "react-i18next";
 import type { NewsNames } from "../types/index1";
+import type { siteConfig } from "../config/site1";
+
+type Locale = (typeof siteConfig.language)[number]["id"];
 
 export function useLocalizedNewsTitle(
   names: NewsNames | null | undefined,
@@ -9,10 +12,12 @@ export function useLocalizedNewsTitle(
 
   if (!names) return fallback;
 
-  const current = names[i18n.language as "th" | "en"];
+  const lang = i18n.language as Locale;
+
+  const current = names[lang];
   if (current && current.trim() !== "") return current;
 
-  const other = i18n.language === "th" ? "en" : "th";
+  const other: Locale = lang === "th" ? "en" : "th";
   const otherVal = names[other];
   if (otherVal && otherVal.trim() !== "") return otherVal;
 

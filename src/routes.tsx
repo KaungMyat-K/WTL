@@ -6,13 +6,15 @@ import ServiceRootLayout from "./pages/services/ServiceRootLayout";
 import Service from "./pages/services/Service";
 import ServiceDetail from "./pages/services/ServiceDetail";
 import BlogRootLayout from "./pages/blogs/BlogRootLayout";
-import Blog from "./pages/blogs/Blog";
+
 import BlogDetail from "./pages/blogs/BlogDetail";
 import JobRootLayout from "./pages/jobs/JobRootLayout";
-import Job from "./pages/jobs/Job";
+
 import JobDetail from "./pages/jobs/JobDetail";
 import Contact from "./pages/Contact";
 import Offices from "./pages/Offices";
+import JobTest from "./pages/jobs/JobTest";
+import BlogTest from "./pages/blogs/BlogTest";
 
 export const router = createBrowserRouter([
   {
@@ -52,7 +54,7 @@ export const router = createBrowserRouter([
         children: [
           {
             index: true,
-            element: <Blog />,
+            element: <BlogTest />,
           },
           {
             path: ":blogId",
@@ -66,7 +68,7 @@ export const router = createBrowserRouter([
         children: [
           {
             index: true,
-            element: <Job />,
+            element: <JobTest />,
           },
           {
             path: ":jobId",
