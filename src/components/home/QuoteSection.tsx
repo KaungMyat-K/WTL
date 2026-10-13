@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Button from "../ui/Button";
-import { siteConfig } from "../../config/site1";
+import { ROUTES, siteConfig } from "../../config/site1";
 import { Link } from "react-router-dom";
 
 function QuoteSection() {
@@ -23,13 +23,7 @@ function QuoteSection() {
             className="min-w-[140px] sm:min-w-[160px] md:min-w-[180px] lg:min-w-[200px] px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-3.5 text-xs sm:text-sm md:text-base lg:text-lg"
             asChild
           >
-            <Link
-              to={siteConfig.externalRoutes.NEW_INQUIRY}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t("button.newInquiryButton")}
-            </Link>
+            <Link to={ROUTES.CONTACT}>{t("button.newInquiryButton")}</Link>
           </Button>
 
           <Button
